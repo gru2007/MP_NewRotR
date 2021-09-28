@@ -8,6 +8,14 @@
 respawnOnStart = -1;
 cba_settings_hasSettingsFile = 1;
 
+/**********		            Header				**********/
+class Header
+{
+	gameType =  RPG;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 120;	// maximum number of players the mission supports
+};
+
 /**********                       Basic configs                      **********/
 class CfgFunctions {
   class ZONT {
