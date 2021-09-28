@@ -119,6 +119,114 @@ class CfgConsts {
   ghr_entry = "%1: <t color='%3'>%2</t>"; // %1 - unit, %2 - heartrate, %3 - color (#abc123)
 };
 
+// Настройки WarLords (WIP)
+class CfgWLRequisitionPresets
+{
+    class MyWLAssetList // --- имя класса прописанного в модуле "Инициализация WARLORDS".
+    {
+        class WEST // --- Доступное для BLUFOR
+        {
+            class Infantry
+            {
+
+            };
+            class Vehicles // Машины 
+            {
+                class rd501_sw_barc
+                {
+                    cost = 50;
+                    requirements[]={};
+                };
+                class 3as_RTT
+                {
+                    cost = 50;
+                    requirements[]={};
+                };
+            };
+            class Aircraft // Авиация
+            {
+
+            };
+            class Naval // Флот
+            {
+            };
+            class Gear // Снаряжение (ящики)
+            {
+                class Box_212_Ammo
+                {
+                    cost = 10;
+                    requirements[]={};
+                };
+            };
+            class Defences // Защитные. Например: Станочные орудия
+            {
+                class 3AS_HeavyRepeater_Armoured
+                {
+                    cost = 250;
+                    requirements[]={};
+                };
+                class 3AS_HeavyRepeater_UnArmoured
+                {
+                    cost = 150;
+                    requirements[]={};
+                };
+            };
+        };
+        class EAST // --- доступное для OPFOR
+        {
+            // --- место для ввода своих вариантов
+        };
+    };
+};
+
+class CfgWLFactionAssets
+{
+	class WEST // --- BLUFOR
+	{
+		class InfantryUnits // --- for BLUFOR and OPFOR, only individual unit classnames are defined as the system doesn't spawn predefined groups
+		{
+			class JLTS_Clone_P2_RTO {}; // --- asset classname to be added to the spawn list
+		};
+	};
+	class EAST // --- OPFOR
+	{
+		class InfantryUnits
+		{
+			class O_OKalani_B2_Super_Battledroid_01 {};
+			class JLTS_Droid_B1_E5 {};
+      class 3AS_AAT_CIS {};
+		};
+	};
+	class INDEP // --- Independent
+	{
+		class InfantryGroups // --- independent faction uses group configs to spawn garrisons; you can define various group types to be randomly used
+		{
+			groups[] = {
+			//	"'Indep' >> 'IND_G_F' >> 'Infantry' >> 'I_G_InfSquad_Assault'", // --- use this part of the config path found in the Config viewer (CfgGroups)
+			//	"'Indep' >> 'IND_C_F' >> 'Infantry' >> 'BanditCombatGroup'" // --- NOTE THE QUOTATION MARKS AND APOSTROPHES
+			};
+		};
+		class MotorizedGroups
+		{
+			groups[] = {
+				
+			};
+		};
+		class MechanizedGroups
+		{
+			groups[] = {
+				
+			};
+		};
+		class ArmoredGroups
+		{
+			groups[] = {
+				
+			};
+		};
+	};
+};
+
 //Discord info
 class CfgDiscordRichPresence {
     applicationID="797527397447761940";				            // Provided by discord
