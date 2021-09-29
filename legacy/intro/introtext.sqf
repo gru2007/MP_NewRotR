@@ -9,8 +9,8 @@ sleep 11; //Время до начала титров
 
 _role1 = "Добро пожаловать,";
 _role1names = [profileName];
-_role2 = "Игровой проект RD Games";
-_role2names = ["Created by RandiDaison"];
+_role2 = "Игровой проект Revenge of the Republic";
+_role2names = ["Created by rustamka"];
 _role3 = "Присоединяйтесь к Discord";
 _role3names = ["discord.gg/nZaGMaFTav"];
 _role4 = "Удачной игры!";
