@@ -19,3 +19,5 @@ this addAction [""Получение мед. помощи"",""call ace_medical_t
 enableRadio false;
 enableSentences false;
 enableSaving [false, false];
+
+[] execVM "external\Vcom\VcomInit.sqf";
