@@ -75,12 +75,12 @@ class CfgFunctions {
   };
   #include "external\VVS\Functions.ext"
   #include "external\tts_beam\cfgFunctions.ext"
-  #include "vcom\cfgFunctions.hpp"
+  #include "external\vcom\cfgFunctions.hpp"
 };
 
 /**********                        VCOM AI                        **********/
 class Extended_PreInit_EventHandlers {
-	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+	VCM_CBASettings = call compile preprocessFileLineNumbers "external\Vcom\Functions\VCM_CBASettings.sqf";
 };
 
 class CfgSounds {
