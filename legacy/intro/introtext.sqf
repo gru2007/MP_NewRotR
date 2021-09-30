@@ -5,7 +5,7 @@
 
 _onScreenTime = 5;
 
-sleep 11; //Время до начала титров
+sleep 20; //Время до начала титров
 
 _role1 = "Добро пожаловать,";
 _role1names = [profileName];

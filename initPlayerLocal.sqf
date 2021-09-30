@@ -1,17 +1,13 @@
 waitUntil {vehicle player == player};
 
-MPC_canSave = false;
-//[] spawn ZONT_fnc_prs_loadProfile;
-//[] spawn ZONT_fnc_prs_autoSaveInit;
-//Нужно вручную настроить extDB3 
-//Я не могу пока что
+[] spawn ZONT_fnc_loadProfile;
+[] spawn ZONT_fnc_autoSaveInit;
 
 [] spawn ZONT_fnc_initSkills;
 
 [] spawn ZONT_fnc_initTeleportTerminals;
 
 [] execVM "chatCommands.sqf";
-
 [] execVM "legacy\intro\introtext.sqf";
 
 /******                            Zeus list                             ******/
