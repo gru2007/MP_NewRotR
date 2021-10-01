@@ -162,14 +162,9 @@ class CfgWLRequisitionPresets
             };
             class Vehicles // Машины 
             {
-                class rd501_sw_barc
-                {
-                    cost = 50;
-                    requirements[]={};
-                };
                 class 3as_RTT
                 {
-                    cost = 50;
+                    cost = 250;
                     requirements[]={};
                 };
             };
@@ -222,9 +217,7 @@ class CfgWLFactionAssets
 	{
 		class InfantryUnits
 		{
-			class O_OKalani_B2_Super_Battledroid_01 {};
 			class JLTS_Droid_B1_E5 {};
-      class 3AS_AAT_CIS {};
 		};
 	};
 	class INDEP // --- Independent
