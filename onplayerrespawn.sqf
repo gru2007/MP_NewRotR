@@ -6,7 +6,7 @@ switch (playerSide) do {
     case west: {_text = "<t color='#d40000' size='3'>Вы очнулись в медицинском блоке!</t><br/><t color='#ffffff' size='1'>Вы не помните, что с Вами случилось!</t>"};
 		case resistance: {_text = "<t color='#d40000' size='3'>Вы очнулись в лагере!</t><br/><t color='#ffffff' size='1'>Вы не помните, что с Вами случилось!</t>"};
 		case civilian: {_text = "<t color='#d40000' size='3'>Вы очнулись в незнакомом месте!</t><br/><t color='#ffffff' size='1'>Вы не помните, что с Вами случилось!</t>"};
-		case east: {_text = "<t color='#d40000' size='3'>Вы очнулись в незнакомом месте!</t><br/><t color='#ffffff' size='1'>Вы не помните, что с Вами случилось!</t>"};
+		case east: {_text = "<t color='#d40000' size='3'>Вас пересобрали на базе!</t><br/><t color='#ffffff' size='1'>Вы не помните, что с Вами случилось!</t>"};
 };
 titleText [_text, "PLAIN", 0.2, true, true];
 
