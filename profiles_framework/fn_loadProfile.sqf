@@ -2,13 +2,15 @@ if (!hasInterface) exitWith {};
 
 if (isNil {player}) exitWith {diag_log "ZONT_PRS: PLAYER IS NIL"; []};
 private _uid = getPlayerUID player;
+private _name = name player
 if (!("7656" in _uid)) exitWith {diag_log "ZONT_PRS: UID IS INVALID"; []};
 
 waitUntil {sleep 0.1; !dialog};
 
 [{
-  params ["_uid"];
+  params ["_uid","_name"];
   [MPS_BDL_pres, "getChars", [_uid]] call ZONT_fnc_bd_customRequest;
+  [MPS_BDL_pres, "updName", [_name, _uid]] call ZONT_fnc_bd_customRequest;
 },{
   ZPR_ID = nil;
 
