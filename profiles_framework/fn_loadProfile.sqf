@@ -7,7 +7,7 @@ if (!("7656" in _uid)) exitWith {diag_log "ZONT_PRS: UID IS INVALID"; []};
 waitUntil {sleep 0.1; !dialog};
 
 [{
-  params ["_uid","_name"];
+  params ["_uid"];
   [MPS_BDL_pres, "getChars", [_uid]] call ZONT_fnc_bd_customRequest;
 },{
   ZPR_ID = nil;
