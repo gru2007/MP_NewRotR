@@ -10,6 +10,14 @@ waitUntil {vehicle player == player};
 [] execVM "chatCommands.sqf";
 [] execVM "legacy\intro\introtext.sqf";
 
+/******                            Inf Ammo                             ******/
+//Да, сделано криво. Но если надо будет много партронов ограничивать. Тогда сделаю отдельный список.
+player addEventHandler ["Reloaded", { 
+  if not (((_this select 3) select 0) == "SWLW_plx1_at_mag" or ((_this select 3) select 0) == "SWLW_plx1_ap_mag" or ((_this select 3) select 0) == "SWLW_plx1_aa_mag") then { 
+    (_this select 0) addMagazine ((_this select 3) select 0); 
+  }; 
+}];
+
 /******                            Zeus list                             ******/
 MCH_ZEUS_LIST = [{
   if (isnull (finddisplay 312)) exitWith {};
