@@ -11,9 +11,13 @@ waitUntil {vehicle player == player};
 [] execVM "legacy\intro\introtext.sqf";
 
 /******                            Inf Ammo                             ******/
-//Да, сделано криво. Но если надо будет много партронов ограничивать. Тогда сделаю отдельный список.
+MagazineBlackList = [
+  "SWLW_plx1_at_mag",
+  "SWLW_plx1_ap_mag",
+  "SWLW_plx1_aa_mag"
+];
 player addEventHandler ["Reloaded", { 
-  if not (((_this select 3) select 0) == "SWLW_plx1_at_mag" or ((_this select 3) select 0) == "SWLW_plx1_ap_mag" or ((_this select 3) select 0) == "SWLW_plx1_aa_mag") then { 
+  if not (((_this select 3) select 0) in MagazineBlackList) then { 
     (_this select 0) addMagazine ((_this select 3) select 0); 
   }; 
 }];
