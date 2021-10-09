@@ -96,6 +96,22 @@ class Extended_PreInit_EventHandlers {
 
 class CfgSounds {
   sounds[] = {};
+  class RadiationLow {
+		name = "!RadiationLow";
+		sound[] = {"sound\GeigerLow.ogg", 1, 1};
+		titles[] = {};
+		delay = 3.4;
+	};
+	class RadiationMedium: RadiationLoW {
+		name = "!RadiationMedium";
+		sound[] = {"sound\GeigerMedium.ogg", 1, 1};
+		delay = 4.1;
+	};
+	class RadiationHigh: RadiationLoW {
+		name = "!RadiationHigh";
+		sound[] = {"sound\GeigerHighAlarm.ogg", 1, 1};
+		delay = 5.3;
+	};
   #include "external\tts_beam\cfgSounds.ext"
 };
 

@@ -5,29 +5,29 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=526;
+	toggles=1546;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=42509;
+		nextID=45932;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=13;
 	};
 	class LayerIndexProvider
 	{
-		nextID=13374;
+		nextID=13688;
 	};
 	class Camera
 	{
-		pos[]={11472.221,219.66861,8911.5};
-		dir[]={-0.14332847,-0.54737443,-0.82452303};
-		up[]={-0.093745343,0.8368879,-0.53928709};
-		aside[]={-0.98522532,0,0.17126366};
+		pos[]={3477.4504,53.768757,4679.8032};
+		dir[]={0.69772375,-0.38048646,-0.60700017};
+		up[]={0.28706855,0.92477834,-0.24974193};
+		aside[]={-0.65636283,1.7613638e-007,-0.75446463};
 	};
 };
 binarizationWanted=0;
@@ -109,7 +109,6 @@ addons[]=
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Mil_Shelters",
 	"A3_Structures_F_EPA_Civ_Constructions",
-	"SWLA_dev",
 	"SWLB_equipment_facewears",
 	"SKX_JLTS_RETEX",
 	"JLTS_characters_CloneArmor",
@@ -136,7 +135,6 @@ addons[]=
 	"3AS_mortar",
 	"3AS_Equipment",
 	"3AS_Prop_pipes",
-	"SWLA_104th",
 	"SWOP_hk47",
 	"ls_armor_greenfor",
 	"3as_JLTS_Uniforms",
@@ -144,13 +142,9 @@ addons[]=
 	"ace_realisticnames",
 	"ace_attach",
 	"ace_chemlights",
-	"SWLA_985th",
 	"A3_Supplies_F_Enoch_Ammoboxes",
 	"A3_Characters_F_Orange_Facewear",
 	"ace_goggles",
-	"SWLA_74th",
-	"SWLA_416th",
-	"SWLA_502nd",
 	"SWLB_CEE",
 	"A3_Modules_F_Multiplayer",
 	"A3_Modules_F_Curator_Curator",
@@ -213,7 +207,15 @@ addons[]=
 	"JLTS_objects_memorial",
 	"3AS_Prop_MB",
 	"3as_GNK_Prop",
-	"CUP_New_Buildings"
+	"CUP_New_Buildings",
+	"sw_crates",
+	"RD501_patch_explosives",
+	"A3_Modules_F_Effects",
+	"A3_Structures_F_Enoch_Military_Training",
+	"zetaclassshuttle_fly",
+	"lsd_equipment_redfor",
+	"3AS_Prop_Debris",
+	"SWLW_clones_rifles_GL"
 };
 class AddonsMetaData
 {
@@ -528,7 +530,7 @@ class AddonsMetaData
 		class Item51
 		{
 			className="A3_Structures_F_Oldman";
-			name="Arma 3 Oldman - Buildings and Structures";
+			name="Arma 3 Old Man - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -599,570 +601,572 @@ class AddonsMetaData
 		};
 		class Item63
 		{
-			className="SWLA_dev";
-			name="SWLA_dev";
-		};
-		class Item64
-		{
 			className="SWLB_equipment_facewears";
 			name="SWLB_equipment_facewears";
 			author="SW Legion Studios";
 		};
-		class Item65
+		class Item64
 		{
 			className="SKX_JLTS_RETEX";
 			name="SKX_JLTS_RETEX";
 			author="Skreex";
 		};
-		class Item66
+		class Item65
 		{
 			className="JLTS_characters_CloneArmor";
 			name="JLTS The Great War - Clones I";
 			author="MrClock";
 		};
-		class Item67
+		class Item66
 		{
 			className="JLTS_characters_CloneLegions";
 			name="JLTS The Great War - Clone units";
 			author="MrClock";
 		};
-		class Item68
+		class Item67
 		{
 			className="SWLB_clones_spec";
 			name="SWLB_clones_spec";
 			author="SW Legion Studios";
 		};
-		class Item69
+		class Item68
 		{
 			className="SWLB_units";
 			name="SWLB_units";
 			author="SW Legion Studios";
 		};
-		class Item70
+		class Item69
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item71
+		class Item70
 		{
 			className="A3_Structures_F_Tank";
 			name="Arma 3 Tank - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item72
+		class Item71
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item72
 		{
 			className="A3_Props_F_Oldman";
 			name="Arma 3 Oldman - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item74
+		class Item73
 		{
 			className="212th_APC_test";
 			name="212th_APC_test";
 		};
-		class Item75
+		class Item74
 		{
 			className="ls_equipment_redfor";
 			name="Legion Stuidos - Dissension: Deprecated Redfor Equipment";
 			author="Legion Studios";
 		};
-		class Item76
+		class Item75
 		{
 			className="ls_armor_redfor";
 			name="Legion: Dissension - Redfor";
 			author="Legion Studios";
 		};
-		class Item77
+		class Item76
 		{
 			className="3AS_LightVics";
 			name="3AS_LightVics_Barc";
 		};
-		class Item78
+		class Item77
 		{
 			className="SWLW_clones_rifles_DC15A";
 			name="SWLW_clones_rifles_DC15A";
 			author="SW Legion Studios";
 		};
-		class Item79
+		class Item78
 		{
 			className="SWLW_Uzi";
 			name="SWLW_Uzi";
 			author="SW Legion Studios";
 		};
-		class Item80
+		class Item79
 		{
 			className="SWLW_clones_smgs_DC15s";
 			name="SWLW_clones_smgs_DC15s";
 			author="SW Legion Studios";
 		};
-		class Item81
+		class Item80
 		{
 			className="E_Web_SWBF";
 			name="E_Web_SWBF";
 			author="SWOP";
 		};
-		class Item82
+		class Item81
 		{
 			className="ls_armor_bluefor";
 			name="Legion Dissension: Bluefor Armor";
 			author="Legion Studios";
 		};
-		class Item83
+		class Item82
 		{
 			className="3AS_mortar";
 			name="3AS_mortar";
 			author="Ranger";
 		};
-		class Item84
+		class Item83
 		{
 			className="3AS_Equipment";
 			name="3AS_Equipment";
 		};
-		class Item85
+		class Item84
 		{
 			className="3AS_Prop_pipes";
 			name="3AS_Prop_pipes";
 			author="Студия 3-й армии";
 		};
-		class Item86
-		{
-			className="SWLA_104th";
-			name="SWLA_104th";
-			author="Legion Studios";
-		};
-		class Item87
+		class Item85
 		{
 			className="SWOP_hk47";
 			name="SWOP_hk47";
 			author="SWOP";
 		};
-		class Item88
+		class Item86
 		{
 			className="ls_armor_greenfor";
 			name="ls_armor_greenfor";
 			author="Legion Studios";
 		};
-		class Item89
+		class Item87
 		{
 			className="3as_JLTS_Uniforms";
 			name="3as_JLTS_Uniforms";
 		};
-		class Item90
+		class Item88
 		{
 			className="3AS_Characters";
 			name="3AS_Characters_Clones_Headgear";
 			author="3rd Army Studios";
 		};
-		class Item91
+		class Item89
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item92
+		class Item90
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item93
-		{
-			className="SWLA_985th";
-			name="SWLA_985th";
-			author="Legion Studios";
-		};
-		class Item94
+		class Item91
 		{
 			className="A3_Supplies_F_Enoch";
 			name="Arma 3 Enoch - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item95
+		class Item92
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item96
+		class Item93
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item97
-		{
-			className="SWLA_74th";
-			name="SWLA_74th";
-			author="Legion Studios";
-		};
-		class Item98
-		{
-			className="SWLA_416th";
-			name="SWLA_416th";
-			author="Legion Studios";
-		};
-		class Item99
-		{
-			className="SWLA_502nd";
-			name="SWLA_502nd";
-			author="Legion Studios";
-		};
-		class Item100
+		class Item94
 		{
 			className="SWLB_CEE";
 			name="SWLB_CEE";
 		};
-		class Item101
+		class Item95
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item102
+		class Item96
 		{
 			className="acex_fortify";
 			name="acex_fortify";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item103
+		class Item97
 		{
 			className="OPTRE_Modules";
 			name="OPTRE_Modules";
 			author="Article 2 Studios";
 		};
-		class Item104
+		class Item98
 		{
 			className="ryanzombiesfunctions";
 			name="ryanzombiesfunctions";
 			author="Ryan";
 		};
-		class Item105
+		class Item99
 		{
 			className="ls_disabled_b1";
 			name="ls_disabled_b1";
 			author="kripto202";
 		};
-		class Item106
+		class Item100
 		{
 			className="3as_RTT";
 			name="3as_RTT";
 		};
-		class Item107
+		class Item101
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item108
+		class Item102
 		{
 			className="OPTRE_Vehicles_HEV";
 			name="OPTRE_Vehicles_HEV";
 		};
-		class Item109
+		class Item103
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item110
+		class Item104
 		{
 			className="egl_chest";
 			name="egl_chest";
 		};
-		class Item111
+		class Item105
 		{
 			className="3AS_Structures";
 			name="3AS_Structures";
 			author="3as";
 		};
-		class Item112
+		class Item106
 		{
 			className="442_misc_tseries";
 			name="442_misc_tseries";
 			author="KOBRA Mod Team";
 		};
-		class Item113
+		class Item107
 		{
 			className="442_misc_data_pad";
 			name="442_misc_data_pad";
 			author="KOBRA Mod Team";
 		};
-		class Item114
+		class Item108
 		{
 			className="442_misc_personal_locker";
 			name="442_misc_personal_locker";
 			author="KOBRA Mod Team";
 		};
-		class Item115
+		class Item109
 		{
 			className="442_misc_bacta_tank";
 			name="442_misc_bacta_tank";
 			author="KOBRA Mod Team";
 		};
-		class Item116
+		class Item110
 		{
 			className="442_misc_stimbox";
 			name="442_misc_stimbox";
 			author="KOBRA Mod Team";
 		};
-		class Item117
+		class Item111
 		{
 			className="442_misc_mine_cart";
 			name="442_misc_mine_cart";
 			author="KOBRA Mod Team";
 		};
-		class Item118
+		class Item112
 		{
 			className="442_misc_barrel";
 			name="442_misc_barrel";
 			author="KOBRA Mod Team";
 		};
-		class Item119
+		class Item113
 		{
 			className="442_misc_hologram";
 			name="442_misc_hologram";
 			author="KOBRA Mod Team";
 		};
-		class Item120
+		class Item114
 		{
 			className="3AS_Prop_Terminals";
 			name="3AS_Prop_Terminals";
 			author="Студия 3-й армии";
 		};
-		class Item121
+		class Item115
 		{
 			className="442_misc_terminal";
 			name="442_misc_terminal";
 			author="KOBRA Mod Team";
 		};
-		class Item122
+		class Item116
 		{
 			className="3AS_Prop_Platforms";
 			name="3AS_Prop_Platforms";
 			author="Студия 3-й армии";
 		};
-		class Item123
+		class Item117
 		{
 			className="OPTRE_Corvette_archer";
 			name="OPTRE_Corvette_archer";
 		};
-		class Item124
+		class Item118
 		{
 			className="A3_Data_F";
 			name="Arma 3 - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item125
+		class Item119
 		{
 			className="442_ships_arquintens";
 			name="442_ships_arquintens";
 			author="KOBRA Mod Team";
 		};
-		class Item126
+		class Item120
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item127
+		class Item121
 		{
 			className="ls_commandPost";
 			name="ls_commandPost";
 			author="Legion Studios";
 		};
-		class Item128
+		class Item122
 		{
 			className="A3_Structures_F_Exp_A";
 			name="Arma 3 Nexus Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item129
+		class Item123
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item130
+		class Item124
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item131
+		class Item125
 		{
 			className="212th_Props_Portable_Generator";
 			name="212th_Props_Portable_Generator";
 		};
-		class Item132
+		class Item126
 		{
 			className="A3_Structures_F_Exp_Industrial";
 			name="Arma 3 Apex - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item133
+		class Item127
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item134
+		class Item128
 		{
 			className="JLTS_core";
 			name="JLTS The Great War - Core";
 			author="MrClock";
 		};
-		class Item135
+		class Item129
 		{
 			className="JLTS_characters_DroidArmor";
 			name="JLTS The Great War - Droids";
 			author="MrClock";
 		};
-		class Item136
+		class Item130
 		{
 			className="JLTS_weapons_crates";
 			name="JLTS The Great War - Weapons Crates";
 			author="MrClock";
 		};
-		class Item137
+		class Item131
 		{
 			className="442_misc_box";
 			name="442_misc_box";
 			author="KOBRA Mod Team";
 		};
-		class Item138
+		class Item132
 		{
 			className="SWOP_PROPS1";
 			name="SWOP_PROPS1";
 			author="SWOP";
 		};
-		class Item139
+		class Item133
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item140
+		class Item134
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item141
+		class Item135
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item142
+		class Item136
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item143
+		class Item137
 		{
 			className="3AS_Prop_Barricades";
 			name="3AS_Prop_Barricades";
 			author="Студия 3-й армии";
 		};
-		class Item144
+		class Item138
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item145
+		class Item139
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item146
+		class Item140
 		{
 			className="3AS_Static";
 			name="3AS_Static_FieldCannon";
 		};
-		class Item147
+		class Item141
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item148
+		class Item142
 		{
 			className="3as_MTT";
 			name="3as_MTT";
 		};
-		class Item149
+		class Item143
 		{
 			className="ls_dby_827";
 			name="ls_dby_827";
 			author="kripto202";
 		};
-		class Item150
+		class Item144
 		{
 			className="SWLB_turbotank";
 			name="SWLB_turbotank";
 		};
-		class Item151
+		class Item145
 		{
 			className="SWOP_clones_helmet";
 			name="SWOP_clones_helmet";
 			author="SWOP";
 		};
-		class Item152
+		class Item146
 		{
 			className="JLTS_objects_memorial";
 			name="JLTS_objects_memorial";
 			author="MrClock";
 		};
-		class Item153
+		class Item147
 		{
 			className="3AS_Prop_MB";
 			name="3AS_Prop_MB";
 			author="Студия 3-й армии";
 		};
-		class Item154
+		class Item148
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item155
+		class Item149
 		{
 			className="CUP_New_Buildings";
 			name="CUP_New_Buildings";
+		};
+		class Item150
+		{
+			className="sw_crates";
+			name="sw_crates";
+			author="Scar and Clon - SWOP";
+		};
+		class Item151
+		{
+			className="A3_Structures_F_Enoch_Military";
+			name="Arma 3 Contact Platform - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item152
+		{
+			className="zetaclassshuttle_fly";
+			name="zetaclassshuttle_fly";
+			author="SWOP";
+		};
+		class Item153
+		{
+			className="lsd_equipment_redfor";
+			name="Legion Studios - Dissension: Redfor Equipment";
+			author="Legion Studios";
+		};
+		class Item154
+		{
+			className="3AS_Prop_Debris";
+			name="3AS_Prop_Debris";
+			author="Студия 3-й армии";
+		};
+		class Item155
+		{
+			className="SWLW_clones_rifles_GL";
+			name="SWLW_clones_rifles_GL";
+			author="SW Legion Studios";
 		};
 	};
 };
@@ -2251,7 +2255,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=600;
+		items=639;
 		class Item0
 		{
 			dataType="Object";
@@ -32564,7 +32568,6 @@ class Mission
 				};
 			};
 			id=29137;
-			atlOffset=25;
 		};
 		class Item220
 		{
@@ -34088,7 +34091,7 @@ class Mission
 				};
 			};
 			id=29159;
-			atlOffset=25;
+			atlOffset=0.019042969;
 		};
 		class Item221
 		{
@@ -36370,7 +36373,7 @@ class Mission
 				};
 			};
 			id=29181;
-			atlOffset=25;
+			atlOffset=0.00012207031;
 		};
 		class Item222
 		{
@@ -38826,7 +38829,7 @@ class Mission
 				};
 			};
 			id=29189;
-			atlOffset=25;
+			atlOffset=148.36456;
 		};
 		class Item223
 		{
@@ -85682,7 +85685,7 @@ class Mission
 				};
 			};
 			id=29942;
-			atlOffset=-9.8166475;
+			atlOffset=2.2852702;
 		};
 		class Item360
 		{
@@ -99405,7 +99408,7 @@ class Mission
 				};
 			};
 			id=29946;
-			atlOffset=3.0141273;
+			atlOffset=9.2753277;
 		};
 		class Item361
 		{
@@ -152527,7 +152530,7 @@ class Mission
 				};
 			};
 			id=29949;
-			atlOffset=8.5304003;
+			atlOffset=0.91864395;
 		};
 		class Item364
 		{
@@ -161004,7 +161007,7 @@ class Mission
 				};
 			};
 			id=30649;
-			atlOffset=330.46152;
+			atlOffset=500.56445;
 		};
 		class Item439
 		{
@@ -192089,6 +192092,1089 @@ class Mission
 			id=42508;
 			type="3AS_Venator_Prison_Blast_Door_Closed_Prop";
 			atlOffset=223.5;
+		};
+		class Item600
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3556,19.207474,4677.5};
+				angles[]={6.2308254,0.65652305,6.1086521};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=42513;
+			type="Land_zetaclassdestroyed";
+			atlOffset=-5.2130003;
+		};
+		class Item601
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3535.7607,4.8687406,4674.0913};
+				angles[]={1.5707964,1.5707964,3.1415927};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=42514;
+			type="Rd501_Explosive_Barrel";
+			atlOffset=-0.40514565;
+		};
+		class Item602
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3535.375,5.3229499,4675.375};
+				angles[]={6.2571907,0,6.2591872};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=42515;
+			type="3as_Barrel_prop";
+			atlOffset=0.067498207;
+		};
+		class Item603
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3536.0081,5.4298153,4676.7363};
+				angles[]={6.2631893,0,6.2711854};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=42516;
+			type="442_barrel1";
+			atlOffset=-0.089518547;
+		};
+		class Item604
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3536.2664,5.5541134,4675.4839};
+				angles[]={6.2591867,0,0.87266463};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=42518;
+			type="442_barrel1_cis";
+			atlOffset=0.068892002;
+		};
+		class Item605
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3553.375,10.25,4682.25};
+			};
+			id=42522;
+			type="ModuleEffectsFire_F";
+			atlOffset=0.23684692;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEffectsFire_F_ColorBlue";
+					expression="_this setVariable ['ColorBlue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEffectsFire_F_ParticleDensity";
+					expression="_this setVariable ['ParticleDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=55;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEffectsFire_F_ParticleLifeTime";
+					expression="_this setVariable ['ParticleLifeTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.60000002;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleEffectsFire_F_FireDamage";
+					expression="_this setVariable ['FireDamage',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleEffectsFire_F_Timeout";
+					expression="_this setVariable ['Timeout',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleEffectsFire_F_ColorGreen";
+					expression="_this setVariable ['ColorGreen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleEffectsFire_F_ColorRed";
+					expression="_this setVariable ['ColorRed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleEffectsFire_F_ParticleOrientation";
+					expression="_this setVariable ['ParticleOrientation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleEffectsFire_F_EffectSize";
+					expression="_this setVariable ['EffectSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleEffectsFire_F_ParticleSize";
+					expression="_this setVariable ['ParticleSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleEffectsFire_F_ParticleSpeed";
+					expression="_this setVariable ['ParticleSpeed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				nAttributes=11;
+			};
+		};
+		class Item606
+		{
+			dataType="Trigger";
+			position[]={3540.375,4.7504992,4652.125};
+			class Attributes
+			{
+				name="radl";
+				text="Низкая радиация";
+				sizeA=1616.8459;
+				sizeB=1621.082;
+				repeatable=1;
+				activationBy="WEST";
+				effectSound="RadiationLow";
+			};
+			id=43266;
+			type="EmptyDetectorAreaR250";
+			atlOffset=0.32499981;
+		};
+		class Item607
+		{
+			dataType="Trigger";
+			position[]={3538.25,9.9995031,4682.375};
+			class Attributes
+			{
+				name="radm";
+				text="Средняя радиация";
+				onActivation="PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
+				onDeactivation="ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "";
+				sizeA=1010.5;
+				sizeB=966.375;
+				repeatable=1;
+				activationBy="WEST";
+				effectSound="RadiationMedium";
+			};
+			id=43268;
+			type="EmptyDetectorAreaR250";
+			atlOffset=5.0019999;
+		};
+		class Item608
+		{
+			dataType="Trigger";
+			position[]={3542.0859,5.3752184,4683.6099};
+			class Attributes
+			{
+				name="radh";
+				text="Высокая радиация";
+				onActivation="ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "" \n "PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,1.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,2.1,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
+				onDeactivation="PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
+				sizeA=445.233;
+				sizeB=450.12601;
+				repeatable=1;
+				activationBy="WEST";
+				effectSound="RadiationHigh";
+			};
+			id=43269;
+			type="EmptyDetectorAreaR250";
+			atlOffset=0.38499928;
+		};
+		class Item609
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3540.5,4.6892309,4672.25};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44501;
+			type="CraterLong_02_F";
+			atlOffset=-0.094500542;
+		};
+		class Item610
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3545,4.6892309,4667.375};
+				angles[]={0.017263873,3.8689759,6.2785177};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44503;
+			type="CraterLong_02_F";
+			atlOffset=-0.0030031204;
+		};
+		class Item611
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3551.5,4.6892309,4671};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44504;
+			type="CraterLong_02_F";
+			atlOffset=-0.072000504;
+		};
+		class Item612
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3556.125,4.8142309,4675};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44505;
+			type="CraterLong_02_F";
+			atlOffset=-0.039001465;
+		};
+		class Item613
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3561.25,4.9392309,4679.875};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44506;
+			type="CraterLong_02_F";
+			atlOffset=-0.0452528;
+		};
+		class Item614
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3565.625,5.1892309,4684.75};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44507;
+			type="CraterLong_02_F";
+			atlOffset=0.062498569;
+		};
+		class Item615
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3568.75,5.3142309,4691.125};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44508;
+			type="CraterLong_02_F";
+			atlOffset=0.023244858;
+		};
+		class Item616
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3567.5,5.5642309,4693.875};
+				angles[]={6.266768,0.87107617,0.0070918216};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44509;
+			type="CraterLong_02_F";
+			atlOffset=0.18981361;
+		};
+		class Item617
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3564.75,5.6892309,4698.875};
+				angles[]={0.0031573144,4.9982581,6.2655826};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44510;
+			type="CraterLong_02_F";
+			atlOffset=0.12874269;
+		};
+		class Item618
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3558.75,5.6892309,4702.25};
+				angles[]={0.008518789,2.5306675,0.015724551};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44511;
+			type="CraterLong_02_F";
+			atlOffset=-0.15500736;
+		};
+		class Item619
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3558.625,5.9392309,4701.375};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44512;
+			type="CraterLong_02_F";
+			atlOffset=0.19898653;
+		};
+		class Item620
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3554.875,5.8142309,4695.125};
+				angles[]={0.017816069,3.6919143,6.2816319};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=44513;
+			type="CraterLong_02_F";
+			atlOffset=0.48624897;
+		};
+		class Item621
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3557.125,5.5642309,4697.625};
+				angles[]={0.0096447421,4.6061096,6.2681251};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44514;
+			type="CraterLong_02_F";
+			atlOffset=0.066241264;
+		};
+		class Item622
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3550.375,5.3142309,4689.625};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44515;
+			type="CraterLong_02_F";
+			atlOffset=0.1120019;
+		};
+		class Item623
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3546.125,5.0642309,4683.375};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44516;
+			type="CraterLong_02_F";
+			atlOffset=0.045501709;
+		};
+		class Item624
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3542.625,4.9392309,4679};
+				angles[]={0.016456991,4.0070705,6.2761855};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44517;
+			type="CraterLong_02_F";
+			atlOffset=0.020751953;
+		};
+		class Item625
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3538.3245,4.6298714,4579.1792};
+				angles[]={0.0080009829,0,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44518;
+			type="sh_flyable";
+			atlOffset=0.0058922768;
+		};
+		class Item626
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3532.625,4.9475784,4657.375};
+				angles[]={0.78539819,2.2840426,6.0213861};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44520;
+			type="3AS_CIS_CONSOLE_PROP";
+			atlOffset=-0.26800013;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_HoldAction";
+					expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=13;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Включить поле";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="true";
+									};
+								};
+								class Item5
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item6
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item7
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="_object0 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object0 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object0 setPosASL [3557.8,4677.4,48.2586]; " \n " " \n " " \n "_object1 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object1 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object1 setPosASL [3557.8,4677.36,47.1459]; " \n " " \n " " \n "_object2 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object2 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object2 setPosASL [3557.81,4677.47,49.5457]; " \n " " \n " " \n "_object3 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object3 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object3 setPosASL [3557.83,4677.51,50.867]; " \n " " \n " " \n "_object4 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object4 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object4 setPosASL [3557.84,4677.56,52.0984]; " \n " " \n " " \n "_object5 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object5 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object5 setPosASL [3557.84,4677.6,53.2111]; " \n " " \n " " \n "_object6 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object6 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object6 setPosASL [3557.85,4677.67,54.4981]; " \n " " \n " " \n "_object7 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object7 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object7 setPosASL [3557.86,4677.72,55.8194]; " \n " " \n " " \n "_object8 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object8 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object8 setPosASL [3557.86,4677.83,58.2465]; " \n " " \n " " \n "_object9 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object9 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object9 setPosASL [3557.86,4677.79,57.1338]; " \n " " \n " " \n "_object10 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object10 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object10 setPosASL [3557.87,4677.9,59.5336]; " \n " " \n " " \n "_object11 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object11 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object11 setPosASL [3557.89,4677.94,60.8549]; " \n " " \n " " \n "_object12 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object12 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object12 setPosASL [3557.91,4677.99,62.0862]; " \n " " \n " " \n "_object13 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object13 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object13 setPosASL [3557.9,4678.03,63.1989]; " \n " " \n " " \n "_object14 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object14 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object14 setPosASL [3557.91,4678.1,64.486]; " \n " " \n " " \n "_object15 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object15 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object15 setPosASL [3557.93,4678.15,65.8073]; " \n " " \n " " \n "_object16 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object16 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object16 setPosASL [3557.92,4678.18,68.1363]; " \n " " \n " " \n "_object17 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object17 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object17 setPosASL [3557.92,4678.14,67.0236]; " \n " " \n " " \n "_object18 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object18 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object18 setPosASL [3557.93,4678.25,69.4234]; " \n " " \n " " \n "_object19 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object19 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object19 setPosASL [3557.94,4678.3,70.7447]; " \n " " \n " " \n "_object20 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object20 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object20 setPosASL [3557.96,4678.34,71.976]; " \n " " \n " " \n "_object21 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object21 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object21 setPosASL [3557.96,4678.39,73.0887]; " \n " " \n " " \n "_object22 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object22 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object22 setPosASL [3557.97,4678.46,74.3758]; " \n " " \n " " \n "_object23 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object23 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object23 setPosASL [3557.98,4678.5,75.6971]; " \n " " \n " " \n "_object24 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object24 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object24 setPosASL [3557.98,4678.61,78.1242]; " \n " " \n " " \n "_object25 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object25 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object25 setPosASL [3557.98,4678.57,77.0115]; " \n " " \n " " \n "_object26 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object26 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object26 setPosASL [3557.99,4678.68,79.4112]; " \n " " \n " " \n "_object27 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object27 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object27 setPosASL [3558.01,4678.72,80.7325]; " \n " " \n " " \n "_object28 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object28 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object28 setPosASL [3558.02,4678.77,81.9639]; " \n " " \n " " \n "_object29 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object29 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object29 setPosASL [3558.02,4678.81,83.0766]; " \n " " \n " " \n "_object30 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object30 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object30 setPosASL [3558.03,4678.88,84.3637]; " \n " " \n " " \n "_object31 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object31 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object31 setPosASL [3558.05,4678.93,85.685]; " \n " " \n " " \n "_object32 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object32 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object32 setPosASL [3558.03,4679.06,88.1726]; " \n " " \n " " \n "_object33 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object33 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object33 setPosASL [3558.03,4679.01,87.0599]; " \n " " \n " " \n "_object34 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object34 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object34 setPosASL [3558.04,4679.13,89.4597]; " \n " " \n " " \n "_object35 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object35 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object35 setPosASL [3558.06,4679.17,90.781]; " \n " " \n " " \n "_object36 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object36 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object36 setPosASL [3558.08,4679.21,92.0123]; " \n " " \n " " \n "_object37 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object37 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object37 setPosASL [3558.07,4679.26,93.125]; " \n " " \n " " \n "_object38 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object38 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object38 setPosASL [3558.08,4679.33,94.4121]; " \n " " \n " " \n "_object39 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object39 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object39 setPosASL [3558.1,4679.37,95.7334]; " \n " " \n " " \n "_object40 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object40 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object40 setPosASL [3558.1,4679.48,98.1605]; " \n " " \n " " \n "_object41 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object41 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object41 setPosASL [3558.1,4679.44,97.0478]; " \n " " \n " " \n "_object42 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object42 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object42 setPosASL [3558.11,4679.56,99.4475]; " \n " " \n " " \n "_object43 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object43 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object43 setPosASL [3558.13,4679.6,100.769]; " \n " " \n " " \n "_object44 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object44 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object44 setPosASL [3558.14,4679.64,102]; " \n " " \n " " \n "_object45 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object45 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object45 setPosASL [3558.14,4679.69,103.113]; " \n " " \n " " \n "_object46 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object46 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object46 setPosASL [3558.15,4679.76,104.4]; " \n " " \n " " \n "_object47 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object47 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object47 setPosASL [3558.17,4679.8,105.721]; " \n " " \n " " \n "_object48 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object48 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object48 setPosASL [3558.15,4679.84,108.05]; " \n " " \n " " \n "_object49 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object49 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object49 setPosASL [3558.15,4679.79,106.938]; " \n " " \n " " \n "_object50 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object50 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object50 setPosASL [3558.16,4679.91,109.337]; " \n " " \n " " \n "_object51 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object51 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object51 setPosASL [3558.18,4679.95,110.659]; " \n " " \n " " \n "_object52 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object52 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object52 setPosASL [3558.2,4680,111.89]; " \n " " \n " " \n "_object53 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object53 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object53 setPosASL [3558.19,4680.04,113.003]; " \n " " \n " " \n "_object54 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object54 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object54 setPosASL [3558.2,4680.11,114.29]; " \n " " \n " " \n "_object55 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object55 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object55 setPosASL [3558.22,4680.15,115.611]; " \n " " \n " " \n "_object56 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object56 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object56 setPosASL [3558.22,4680.27,118.038]; " \n " " \n " " \n "_object57 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object57 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object57 setPosASL [3558.22,4680.22,116.925]; " \n " " \n " " \n "_object58 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object58 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object58 setPosASL [3558.23,4680.34,119.325]; " \n " " \n " " \n "_object59 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object59 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object59 setPosASL [3558.25,4680.38,120.647]; " \n " " \n " " \n "_object60 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object60 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object60 setPosASL [3558.26,4680.42,121.878]; " \n " " \n " " \n "_object61 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object61 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object61 setPosASL [3558.26,4680.47,122.991]; " \n " " \n " " \n "_object62 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object62 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object62 setPosASL [3558.27,4680.54,124.278]; " \n " " \n " " \n "_object63 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object63 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object63 setPosASL [3558.28,4680.58,125.599]; " \n " " \n " " \n "_object64 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object64 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object64 setPosASL [3558.31,4680.66,128.022]; " \n " " \n " " \n "_object65 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object65 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object65 setPosASL [3558.31,4680.62,126.91]; " \n " " \n " " \n "_object66 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object66 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object66 setPosASL [3558.32,4680.73,129.309]; " \n " " \n " " \n "_object67 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object67 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object67 setPosASL [3558.34,4680.77,130.631]; " \n " " \n " " \n "_object68 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object68 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object68 setPosASL [3558.35,4680.82,131.862]; " \n " " \n " " \n "_object69 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object69 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object69 setPosASL [3558.35,4680.86,132.975]; " \n " " \n " " \n "_object70 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object70 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object70 setPosASL [3558.36,4680.94,134.262]; " \n " " \n " " \n "_object71 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object71 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object71 setPosASL [3558.38,4680.98,135.583]; " \n " " \n " " \n "_object72 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object72 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object72 setPosASL [3558.37,4681.09,138.01]; " \n " " \n " " \n "_object73 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object73 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object73 setPosASL [3558.37,4681.05,136.897]; " \n " " \n " " \n "_object74 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object74 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object74 setPosASL [3558.39,4681.16,139.297]; " \n " " \n " " \n "_object75 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object75 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object75 setPosASL [3558.4,4681.2,140.619]; " \n " " \n " " \n "_object76 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object76 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object76 setPosASL [3558.42,4681.25,141.85]; " \n " " \n " " \n "_object77 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object77 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object77 setPosASL [3558.42,4681.29,142.963]; " \n " " \n " " \n "_object78 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object78 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object78 setPosASL [3558.43,4681.36,144.25]; " \n " " \n " " \n "_object79 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object79 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object79 setPosASL [3558.44,4681.41,145.571]; " \n " " \n " " \n "_object80 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object80 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object80 setPosASL [3558.43,4681.44,147.9]; " \n " " \n " " \n "_object81 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object81 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object81 setPosASL [3558.43,4681.4,146.787]; " \n " " \n " " \n "_object82 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object82 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object82 setPosASL [3558.44,4681.51,149.187]; " \n " " \n " " \n "_object83 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object83 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object83 setPosASL [3558.46,4681.56,150.508]; " \n " " \n " " \n "_object84 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object84 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object84 setPosASL [3558.47,4681.6,151.74]; " \n " " \n " " \n "_object85 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object85 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object85 setPosASL [3558.47,4681.65,152.852]; " \n " " \n " " \n "_object86 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object86 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object86 setPosASL [3558.48,4681.72,154.139]; " \n " " \n " " \n "_object87 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object87 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object87 setPosASL [3558.49,4681.76,155.461]; " \n " " \n " " \n "_object88 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object88 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object88 setPosASL [3558.49,4681.87,157.888]; " \n " " \n " " \n "_object89 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object89 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object89 setPosASL [3558.49,4681.83,156.775]; " \n " " \n " " \n "_object90 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object90 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object90 setPosASL [3558.5,4681.94,159.175]; " \n " " \n " " \n "_object91 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object91 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object91 setPosASL [3558.52,4681.98,160.496]; " \n " " \n " " \n "_object92 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object92 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object92 setPosASL [3558.54,4682.03,161.728]; " \n " " \n " " \n "_object93 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object93 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object93 setPosASL [3558.53,4682.07,162.84]; " \n " " \n " " \n "_object94 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object94 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object94 setPosASL [3558.54,4682.15,164.127]; " \n " " \n " " \n "_object95 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object95 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object95 setPosASL [3558.56,4682.19,165.449]; " \n " " \n " " \n "_object96 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object96 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object96 setPosASL [3558.57,4682.17,166.636]; " \n " " \n " " \n "_object97 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object97 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object97 setPosASL [3558.58,4682.22,167.958]; " \n " " \n " " \n "_object98 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object98 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object98 setPosASL [3558.6,4682.26,169.189]; " \n " " \n " " \n "_object99 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object99 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object99 setPosASL [3558.6,4682.31,170.302]; " \n " " \n " " \n "_object100 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object100 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object100 setPosASL [3558.61,4682.38,171.589]; " \n " " \n " " \n "_object101 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object101 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object101 setPosASL [3558.62,4682.42,172.91]; " \n " " \n " " \n "_object102 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object102 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object102 setPosASL [3558.62,4682.53,175.337]; " \n " " \n " " \n "_object103 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object103 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object103 setPosASL [3558.62,4682.49,174.225]; " \n " " \n " " \n "_object104 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object104 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object104 setPosASL [3558.63,4682.6,176.624]; " \n " " \n " " \n "_object105 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object105 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object105 setPosASL [3558.65,4682.64,177.946]; " \n " " \n " " \n "_object106 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object106 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object106 setPosASL [3558.66,4682.69,179.177]; " \n " " \n " " \n "_object107 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object107 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object107 setPosASL [3558.66,4682.73,180.29]; " \n " " \n " " \n "_object108 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object108 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object108 setPosASL [3558.67,4682.8,181.577]; " \n " " \n " " \n "_object109 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object109 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object109 setPosASL [3558.69,4682.85,182.898]; " \n " " \n " " \n "_object110 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object110 setVectorDirAndUp [[0.712906,-0.70126,0],[0,0,1]]; " \n "_object110 setPosASL [3698.1,4799.63,4.86876]; " \n " " \n " " \n "_object111 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object111 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object111 setPosASL [3733.56,4714.81,4.86876]; " \n " " \n " " \n "_object112 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object112 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object112 setPosASL [3612.5,4835.61,4.86876]; " \n " " \n " " \n "_object113 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object113 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object113 setPosASL [3733.57,4614.85,4.86876]; " \n " " \n " " \n "_object114 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object114 setVectorDirAndUp [[-0.529522,-0.848297,0],[0,0,1]]; " \n "_object114 setPosASL [3707.22,4522.7,4.86876]; " \n " " \n " " \n "_object115 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object115 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object115 setPosASL [3630.77,4481.17,4.86876]; " \n " " \n " " \n "_object116 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object116 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object116 setPosASL [3512.79,4837.07,4.86876]; " \n " " \n " " \n "_object117 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object117 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object117 setPosASL [3531.06,4482.64,4.86876]; " \n " " \n " " \n "_object118 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object118 setVectorDirAndUp [[-0.713663,0.70049,0],[0,0,1]]; " \n "_object118 setPosASL [3445.84,4518.46,4.86876]; " \n " " \n " " \n "_object119 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object119 setVectorDirAndUp [[0.528606,0.848868,0],[0,0,1]]; " \n "_object119 setPosASL [3436.42,4795.37,4.86876]; " \n " " \n " " \n "_object120 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object120 setVectorDirAndUp [[0.00107923,-0.999999,0],[0,0,1]]; " \n "_object120 setPosASL [3410.17,4703.2,4.86876]; " \n " " \n " " \n "_object121 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object121 setVectorDirAndUp [[0.00107923,-0.999999,0],[0,0,1]]; " \n "_object121 setPosASL [3410.29,4603.23,4.86876]; " \n " " \n " " \n "_object122 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object122 setVectorDirAndUp [[0.712906,-0.70126,0],[0,0,1]]; " \n "_object122 setPosASL [3698.07,4799.56,104.526]; " \n " " \n " " \n "_object123 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object123 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object123 setPosASL [3733.52,4714.75,104.526]; " \n " " \n " " \n "_object124 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object124 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object124 setPosASL [3612.47,4835.55,104.526]; " \n " " \n " " \n "_object125 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object125 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object125 setPosASL [3733.53,4614.78,104.526]; " \n " " \n " " \n "_object126 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object126 setVectorDirAndUp [[-0.529522,-0.848297,0],[0,0,1]]; " \n "_object126 setPosASL [3707.18,4522.64,104.526]; " \n " " \n " " \n "_object127 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object127 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object127 setPosASL [3630.74,4481.11,104.526]; " \n " " \n " " \n "_object128 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object128 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object128 setPosASL [3512.75,4837.01,104.526]; " \n " " \n " " \n "_object129 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object129 setVectorDirAndUp [[-0.999882,0.0153307,0],[0,0,1]]; " \n "_object129 setPosASL [3531.02,4482.57,104.526]; " \n " " \n " " \n "_object130 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object130 setVectorDirAndUp [[-0.713663,0.70049,0],[0,0,1]]; " \n "_object130 setPosASL [3445.8,4518.39,104.526]; " \n " " \n " " \n "_object131 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object131 setVectorDirAndUp [[0.528606,0.848868,0],[0,0,1]]; " \n "_object131 setPosASL [3436.39,4795.31,104.526]; " \n " " \n " " \n "_object132 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object132 setVectorDirAndUp [[0.00107923,-0.999999,0],[0,0,1]]; " \n "_object132 setPosASL [3410.14,4703.13,104.526]; " \n " " \n " " \n "_object133 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object133 setVectorDirAndUp [[0.00107923,-0.999999,0],[0,0,1]]; " \n "_object133 setPosASL [3410.26,4603.17,104.526]; " \n " " \n " " \n "_object134 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object134 setVectorDirAndUp [[5.53263e-005,1,-9.03448e-005],[0.999892,-5.39911e-005,0.0147131]]; " \n "_object134 setPosASL [3410.44,4602.85,201.93]; " \n " " \n " " \n "_object135 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object135 setVectorDirAndUp [[5.53263e-005,1,-9.03448e-005],[0.999892,-5.39911e-005,0.0147131]]; " \n "_object135 setPosASL [3410.55,4702.9,201.93]; " \n " " \n " " \n "_object136 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object136 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object136 setPosASL [3558.96,4682.8,184.477]; " \n " " \n " " \n "_object137 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object137 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object137 setPosASL [3559.92,4682.84,185.393]; " \n " " \n " " \n "_object138 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object138 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object138 setPosASL [3560.8,4682.89,186.249]; " \n " " \n " " \n "_object139 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object139 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object139 setPosASL [3561.59,4682.93,187.032]; " \n " " \n " " \n "_object140 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object140 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object140 setPosASL [3562.51,4683,187.929]; " \n " " \n " " \n "_object141 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object141 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object141 setPosASL [3563.47,4683.05,188.847]; " \n " " \n " " \n "_object142 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object142 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object142 setPosASL [3564.31,4683.03,189.678]; " \n " " \n " " \n "_object143 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object143 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object143 setPosASL [3565.26,4683.07,190.595]; " \n " " \n " " \n "_object144 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object144 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object144 setPosASL [3566.15,4683.12,191.451]; " \n " " \n " " \n "_object145 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object145 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object145 setPosASL [3566.94,4683.16,192.233]; " \n " " \n " " \n "_object146 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object146 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object146 setPosASL [3567.86,4683.23,193.131]; " \n " " \n " " \n "_object147 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object147 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object147 setPosASL [3568.81,4683.28,194.049]; " \n " " \n " " \n "_object148 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object148 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object148 setPosASL [3570.54,4683.39,195.757]; " \n " " \n " " \n "_object149 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object149 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object149 setPosASL [3569.75,4683.34,194.974]; " \n " " \n " " \n "_object150 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object150 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object150 setPosASL [3571.46,4683.46,196.655]; " \n " " \n " " \n "_object151 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object151 setVectorDirAndUp [[0,1,0],[0.711096,0,0.703095]]; " \n "_object151 setPosASL [3572.41,4683.5,197.57]; " \n " " \n " " \n "_object152 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object152 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object152 setPosASL [3573.3,4683.55,198.426]; " \n " " \n " " \n "_object153 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object153 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object153 setPosASL [3574.09,4683.59,199.209]; " \n " " \n " " \n "_object154 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object154 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object154 setPosASL [3575.01,4683.66,200.108]; " \n " " \n " " \n "_object155 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object155 setVectorDirAndUp [[-0.0156493,0.999752,0.0158274],[0.711096,0,0.703095]]; " \n "_object155 setPosASL [3575.96,4683.7,201.024]; " \n " " \n " " \n "_object156 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object156 setVectorDirAndUp [[0.999995,-0.0031579,-9.4578e-005],[-0.00315616,-0.999887,0.0147251]]; " \n "_object156 setPosASL [3513.24,4837.61,201.93]; " \n " " \n " " \n "_object157 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object157 setVectorDirAndUp [[0.999995,-0.0031579,-9.4578e-005],[-0.00315616,-0.999887,0.0147251]]; " \n "_object157 setPosASL [3613.29,4837.2,201.93]; " \n " " \n " " \n "_object158 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object158 setVectorDirAndUp [[5.53263e-005,1,-9.03448e-005],[0.999892,-5.39911e-005,0.0147131]]; " \n "_object158 setPosASL [3633.51,4714.87,201.93]; " \n " " \n " " \n "_object159 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object159 setVectorDirAndUp [[5.53263e-005,1,-9.03448e-005],[0.999892,-5.39911e-005,0.0147131]]; " \n "_object159 setPosASL [3633.4,4614.82,201.93]; " \n " " \n " " \n "_object160 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object160 setVectorDirAndUp [[0.999995,-0.0031579,-9.4578e-005],[-0.00315616,-0.999887,0.0147251]]; " \n "_object160 setPosASL [3531.76,4582.94,201.93]; " \n " " \n " " \n "_object161 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object161 setVectorDirAndUp [[0.999995,-0.0031579,-9.4578e-005],[-0.00315616,-0.999887,0.0147251]]; " \n "_object161 setPosASL [3631.81,4582.52,201.93]; " \n " " \n " " \n "_object162 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object162 setVectorDirAndUp [[0.999995,-0.0031579,-9.4578e-005],[-0.00315616,-0.999887,0.0147251]]; " \n "_object162 setPosASL [3560.23,4739.13,201.93]; " \n " " \n " " \n "_object163 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object163 setVectorDirAndUp [[0.999995,-0.0031579,-9.4578e-005],[-0.00315616,-0.999887,0.0147251]]; " \n "_object163 setPosASL [3559.24,4640.51,202.644]; " \n " " \n " " \n "_object164 = createVehicle [""442_ray_25x25"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object164 setVectorDirAndUp [[5.48149e-013,1,7.82146e-011],[-0.999975,0,0.00700809]]; " \n "_object164 setPosASL [3633.73,4585.76,201.93]; " \n " " \n " " \n "_object165 = createVehicle [""442_ray_50x25"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object165 setVectorDirAndUp [[2.91381e-008,1,-4.00632e-010],[-0.999918,2.91408e-008,0.0127747]]; " \n "_object165 setPosASL [3634.35,4714.87,201.93]; " \n " " \n " " \n "_object166 = createVehicle [""442_ray_50x25"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object166 setVectorDirAndUp [[2.91381e-008,1,-4.00632e-010],[-0.999918,2.91408e-008,0.0127747]]; " \n "_object166 setPosASL [3634.22,4664.9,201.93]; " \n " " \n " " \n "_object167 = createVehicle [""442_ray_50x25"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object167 setVectorDirAndUp [[2.91381e-008,1,-4.00632e-010],[-0.999918,2.91408e-008,0.0127747]]; " \n "_object167 setPosASL [3634.09,4614.9,201.93]; " \n " " \n " " \n "_object168 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object168 setVectorDirAndUp [[0.529337,0.848412,-9.63844e-005],[0.848321,-0.529278,0.0147294]]; " \n "_object168 setPosASL [3625.5,4576.39,201.93]; " \n " " \n " " \n "_object169 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object169 setVectorDirAndUp [[0.529337,0.848412,-9.63844e-005],[0.848321,-0.529278,0.0147294]]; " \n "_object169 setPosASL [3435,4793.68,201.93]; " \n " " \n " " \n "_object170 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object170 setVectorDirAndUp [[-0.700521,0.713632,-0.000157802],[0.713553,0.700447,0.0147339]]; " \n "_object170 setPosASL [3629,4729.91,201.93]; " \n " " \n " " \n "_object171 = createVehicle [""442_ray_100x100"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object171 setVectorDirAndUp [[-0.700521,0.713632,-0.000157802],[0.713553,0.700447,0.0147339]]; " \n "_object171 setPosASL [3444.84,4518.75,201.93]; " \n " " \n " " \n "_object172 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object172 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object172 setPosASL [3557.52,4675.79,8.40893]; " \n " " \n " " \n "_object173 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object173 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object173 setPosASL [3557.52,4675.75,7.29623]; " \n " " \n " " \n "_object174 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object174 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object174 setPosASL [3557.53,4675.87,9.69599]; " \n " " \n " " \n "_object175 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object175 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object175 setPosASL [3557.55,4675.91,11.0173]; " \n " " \n " " \n "_object176 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object176 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object176 setPosASL [3558.53,4683.24,184.477]; " \n " " \n " " \n "_object177 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object177 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object177 setPosASL [3558.26,4684.15,185.393]; " \n " " \n " " \n "_object178 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object178 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object178 setPosASL [3557.99,4685,186.249]; " \n " " \n " " \n "_object179 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object179 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object179 setPosASL [3557.75,4685.76,187.032]; " \n " " \n " " \n "_object180 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object180 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object180 setPosASL [3557.45,4686.63,187.929]; " \n " " \n " " \n "_object181 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object181 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object181 setPosASL [3557.18,4687.54,188.847]; " \n " " \n " " \n "_object182 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object182 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object182 setPosASL [3556.98,4688.37,189.678]; " \n " " \n " " \n "_object183 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object183 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object183 setPosASL [3556.7,4689.28,190.595]; " \n " " \n " " \n "_object184 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object184 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object184 setPosASL [3556.44,4690.13,191.451]; " \n " " \n " " \n "_object185 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object185 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object185 setPosASL [3556.2,4690.88,192.233]; " \n " " \n " " \n "_object186 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object186 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object186 setPosASL [3555.91,4691.76,193.131]; " \n " " \n " " \n "_object187 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object187 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object187 setPosASL [3555.62,4692.67,194.049]; " \n " " \n " " \n "_object188 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object188 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object188 setPosASL [3555.09,4694.31,195.757]; " \n " " \n " " \n "_object189 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object189 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object189 setPosASL [3555.32,4693.56,194.974]; " \n " " \n " " \n "_object190 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object190 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object190 setPosASL [3554.79,4695.18,196.655]; " \n " " \n " " \n "_object191 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object191 setVectorDirAndUp [[-0.968638,-0.248477,-3.72007e-005],[-0.176714,0.688781,0.703103]]; " \n "_object191 setPosASL [3554.51,4696.1,197.57]; " \n " " \n " " \n "_object192 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object192 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object192 setPosASL [3554.25,4696.94,198.426]; " \n " " \n " " \n "_object193 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object193 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object193 setPosASL [3554.01,4697.7,199.209]; " \n " " \n " " \n "_object194 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object194 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object194 setPosASL [3553.71,4698.57,200.108]; " \n " " \n " " \n "_object195 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object195 setVectorDirAndUp [[-0.96451,-0.263574,0.0157901],[-0.176714,0.688781,0.703103]]; " \n "_object195 setPosASL [3553.43,4699.49,201.024]; " \n " " \n " " \n "_object196 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object196 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object196 setPosASL [3558.36,4682.58,184.477]; " \n " " \n " " \n "_object197 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object197 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object197 setPosASL [3557.73,4681.87,185.393]; " \n " " \n " " \n "_object198 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object198 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object198 setPosASL [3557.16,4681.18,186.249]; " \n " " \n " " \n "_object199 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object199 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object199 setPosASL [3556.65,4680.58,187.032]; " \n " " \n " " \n "_object200 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object200 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object200 setPosASL [3556.07,4679.86,187.929]; " \n " " \n " " \n "_object201 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object201 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object201 setPosASL [3555.45,4679.14,188.847]; " \n " " \n " " \n "_object202 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object202 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object202 setPosASL [3554.86,4678.52,189.678]; " \n " " \n " " \n "_object203 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object203 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object203 setPosASL [3554.24,4677.81,190.595]; " \n " " \n " " \n "_object204 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object204 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object204 setPosASL [3553.67,4677.13,191.451]; " \n " " \n " " \n "_object205 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object205 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object205 setPosASL [3553.16,4676.52,192.233]; " \n " " \n " " \n "_object206 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object206 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object206 setPosASL [3552.57,4675.8,193.131]; " \n " " \n " " \n "_object207 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object207 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object207 setPosASL [3551.95,4675.09,194.049]; " \n " " \n " " \n "_object208 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object208 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object208 setPosASL [3550.85,4673.75,195.757]; " \n " " \n " " \n "_object209 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object209 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object209 setPosASL [3551.36,4674.35,194.974]; " \n " " \n " " \n "_object210 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object210 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object210 setPosASL [3550.27,4673.03,196.655]; " \n " " \n " " \n "_object211 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object211 setVectorDirAndUp [[0.72821,-0.685354,1.19507e-005],[-0.487334,-0.517795,0.703132]]; " \n "_object211 setPosASL [3549.64,4672.31,197.57]; " \n " " \n " " \n "_object212 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object212 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object212 setPosASL [3549.07,4671.63,198.426]; " \n " " \n " " \n "_object213 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object213 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object213 setPosASL [3548.57,4671.03,199.209]; " \n " " \n " " \n "_object214 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object214 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object214 setPosASL [3547.99,4670.3,200.108]; " \n " " \n " " \n "_object215 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object215 setVectorDirAndUp [[0.738756,-0.673787,0.0158383],[-0.487334,-0.517795,0.703132]]; " \n "_object215 setPosASL [3547.36,4669.58,201.024]; " \n " " \n " " \n "_object216 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object216 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object216 setPosASL [3557.56,4675.95,12.2487]; " \n " " \n " " \n "_object217 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object217 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object217 setPosASL [3557.56,4676,13.3614]; " \n " " \n " " \n "_object218 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object218 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object218 setPosASL [3557.57,4676.07,14.6484]; " \n " " \n " " \n "_object219 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object219 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object219 setPosASL [3557.59,4676.11,15.9697]; " \n " " \n " " \n "_object220 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object220 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object220 setPosASL [3557.59,4676.22,18.3968]; " \n " " \n " " \n "_object221 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object221 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object221 setPosASL [3557.59,4676.18,17.2841]; " \n " " \n " " \n "_object222 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object222 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object222 setPosASL [3557.6,4676.29,19.6839]; " \n " " \n " " \n "_object223 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object223 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object223 setPosASL [3557.62,4676.34,21.0052]; " \n " " \n " " \n "_object224 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object224 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object224 setPosASL [3557.63,4676.38,22.2365]; " \n " " \n " " \n "_object225 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object225 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object225 setPosASL [3557.63,4676.43,23.3492]; " \n " " \n " " \n "_object226 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object226 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object226 setPosASL [3557.64,4676.5,24.6363]; " \n " " \n " " \n "_object227 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object227 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object227 setPosASL [3557.65,4676.54,25.9576]; " \n " " \n " " \n "_object228 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object228 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object228 setPosASL [3557.64,4676.58,28.2866]; " \n " " \n " " \n "_object229 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object229 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object229 setPosASL [3557.64,4676.53,27.1739]; " \n " " \n " " \n "_object230 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object230 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object230 setPosASL [3557.65,4676.65,29.5737]; " \n " " \n " " \n "_object231 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object231 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object231 setPosASL [3557.67,4676.69,30.895]; " \n " " \n " " \n "_object232 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object232 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object232 setPosASL [3557.68,4676.74,32.1263]; " \n " " \n " " \n "_object233 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object233 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object233 setPosASL [3557.68,4676.78,33.239]; " \n " " \n " " \n "_object234 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object234 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object234 setPosASL [3557.69,4676.85,34.5261]; " \n " " \n " " \n "_object235 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object235 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object235 setPosASL [3557.71,4676.89,35.8474]; " \n " " \n " " \n "_object236 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object236 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object236 setPosASL [3557.71,4677,38.2745]; " \n " " \n " " \n "_object237 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object237 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object237 setPosASL [3557.71,4676.96,37.1618]; " \n " " \n " " \n "_object238 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object238 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object238 setPosASL [3557.72,4677.08,39.5615]; " \n " " \n " " \n "_object239 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object239 setVectorDirAndUp [[0,1,0],[0,0,1]]; " \n "_object239 setPosASL [3557.73,4677.12,40.8828]; " \n " " \n " " \n "_object240 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object240 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object240 setPosASL [3557.75,4677.16,42.1142]; " \n " " \n " " \n "_object241 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object241 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object241 setPosASL [3557.75,4677.21,43.2269]; " \n " " \n " " \n "_object242 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object242 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object242 setPosASL [3557.76,4677.28,44.514]; " \n " " \n " " \n "_object243 = createVehicle [""VR_3DSelector_01_exit_F"", [0, 0, 0], [], 0, ""CAN_COLLIDE""]; " \n "_object243 setVectorDirAndUp [[-0.0222577,0.999752,0],[0,0,1]]; " \n "_object243 setPosASL [3557.77,4677.32,45.8353];  " \n "deleteVehicle radl;" \n "deleteVehicle radm;";
+									};
+								};
+								class Item8
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+								class Item9
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=10;
+									};
+								};
+								class Item10
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=1000;
+									};
+								};
+								class Item11
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=0;
+									};
+								};
+								class Item12
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item627
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3532.7124,5.0769234,4657.6162};
+				angles[]={6.2716322,1.1145841,0.0099249901};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=44523;
+			type="Headgear_cis_b1_helmet";
+			atlOffset=0.61030483;
+		};
+		class Item628
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3533.8491,4.4014063,4657.9072};
+				angles[]={4.712389,3.1415925,1.3716764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44526;
+			type="lsd_cis_standard_backpack";
+			atlOffset=-0.11620235;
+		};
+		class Item629
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3539.7756,4.6745663,4666.4756};
+				angles[]={0.01644963,4.008121,6.2761683};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44747;
+			type="CraterLong_02_F";
+			atlOffset=-0.007121563;
+		};
+		class Item630
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3523.2693,5.2310505,4656.1553};
+				angles[]={1.5707964,0,1.5707964};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44748;
+			type="3AS_DEBRIS1_PROP";
+			atlOffset=-0.86301947;
+		};
+		class Item631
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3546.9302,6.6544347,4665.6753};
+				angles[]={0.0087020425,2.5081015,6.2746878};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=44763;
+			type="3AS_DEBRIS2_PROP";
+			atlOffset=-0.0019702911;
+		};
+		class Item632
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3520.3154,4.8664656,4668.9717};
+				angles[]={6.2301736,1.3857186,0.022652144};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45918;
+			type="SWLW_GH_GL";
+			atlOffset=-0.0068473816;
+		};
+		class Item633
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3523.5876,4.7350235,4665.877};
+				angles[]={6.2540174,6.2254367,6.233458};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45919;
+			type="SWLW_GH_GL";
+			atlOffset=9.059906e-006;
+		};
+		class Item634
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3527.3843,4.7448292,4670.2622};
+				angles[]={0.05406037,3.7695527,0.020018708};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45920;
+			type="SWLW_GH_GL";
+			atlOffset=-0.03599596;
+		};
+		class Item635
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3517.7424,4.9636984,4668.2915};
+				angles[]={6.2682271,2.2904215,0.055671852};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45921;
+			type="SWLW_GH_GL";
+			atlOffset=1.1920929e-005;
+		};
+		class Item636
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3535.2358,4.3906279,4647.6372};
+				angles[]={6.2804704,5.7418041,6.225605};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45922;
+			type="SWLW_GH_GL";
+			atlOffset=9.5367432e-007;
+		};
+		class Item637
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3545.3369,4.4045806,4650.4575};
+				angles[]={6.2452803,0.12932821,6.2397461};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45923;
+			type="SWLW_GH_GL";
+			atlOffset=5.7220459e-006;
+		};
+		class Item638
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3546.2551,4.7288156,4654.8574};
+				angles[]={0.43633232,3.2779205,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=45924;
+			type="land_cargoboxscarif1";
+			atlOffset=-0.70355034;
 		};
 	};
 };
