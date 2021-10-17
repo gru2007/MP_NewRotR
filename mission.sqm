@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=45965;
+		nextID=45966;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13738;
+		nextID=13763;
 	};
 	class Camera
 	{
-		pos[]={9367.1201,49.28405,468.02332};
-		dir[]={-0.38730374,-0.42911345,0.81602001};
-		up[]={-0.18400142,0.9032405,0.38767669};
-		aside[]={0.90342033,-3.1318632e-007,0.42878509};
+		pos[]={8351.125,894.82538,1150.9255};
+		dir[]={-0.87426472,-0.35720274,0.3288559};
+		up[]={-0.33435938,0.93400806,0.12576959};
+		aside[]={0.35207978,-6.7993096e-007,0.93600494};
 	};
 };
 binarizationWanted=0;
@@ -2255,7 +2255,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=636;
+		items=637;
 		class Item0
 		{
 			dataType="Object";
@@ -68524,8 +68524,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68534,10 +68534,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68600,8 +68600,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68610,10 +68610,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68693,8 +68693,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68703,10 +68703,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68769,8 +68769,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68779,10 +68779,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68862,8 +68862,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68872,10 +68872,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68938,8 +68938,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68948,10 +68948,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -69030,8 +69030,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -69040,10 +69040,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -69106,8 +69106,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -69116,10 +69116,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -75707,8 +75707,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -75717,10 +75717,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -75783,8 +75783,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -75793,10 +75793,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -95015,8 +95015,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -95025,10 +95025,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -95091,8 +95091,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -95101,10 +95101,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -98496,8 +98496,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -98506,10 +98506,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -98572,8 +98572,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -98582,10 +98582,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -107327,8 +107327,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -107337,10 +107337,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -107403,8 +107403,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -107413,10 +107413,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -110603,7 +110603,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8957.3535,16.255739,780.948};
+				position[]={8957.3535,16.25573,780.948};
 				angles[]={0,1.5485957,0};
 			};
 			side="Empty";
@@ -110614,7 +110614,7 @@ class Mission
 			};
 			id=30206;
 			type="k_personal_locker";
-			atlOffset=0.19001007;
+			atlOffset=0.19000053;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -147213,11 +147213,12 @@ class Mission
 			{
 				name="radl";
 				text="Низкая радиация";
+				condition="thislist";
 				sizeA=1616.8459;
 				sizeB=1621.082;
 				repeatable=1;
 				activationBy="WEST";
-				isServerOnly=1;
+				triggerInterval=1;
 				effectSound="RadiationLow";
 			};
 			id=43266;
@@ -147232,13 +147233,14 @@ class Mission
 			{
 				name="radm";
 				text="Средняя радиация";
+				condition="thislist";
 				onActivation="PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
 				onDeactivation="ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "";
 				sizeA=1010.5;
 				sizeB=966.375;
 				repeatable=1;
 				activationBy="WEST";
-				isServerOnly=1;
+				triggerInterval=1;
 				effectSound="RadiationMedium";
 			};
 			id=43268;
@@ -147253,13 +147255,14 @@ class Mission
 			{
 				name="radh";
 				text="Высокая радиация";
+				condition="thislist";
 				onActivation="ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "" \n "PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,1.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,2.1,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
 				onDeactivation="PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
 				sizeA=445.233;
 				sizeB=450.12601;
 				repeatable=1;
 				activationBy="WEST";
-				isServerOnly=1;
+				triggerInterval=1;
 				effectSound="RadiationHigh";
 			};
 			id=43269;
@@ -148313,6 +148316,3579 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item636
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8956.4248,17.088917,783.75098};
+				angles[]={0,1.1975052,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="rs_ars";
+				description="ARF";
+				disableSimulation=1;
+			};
+			id=45965;
+			type="repammobox2";
+			atlOffset=0.12841988;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=247;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_Clonetcadet_helmet";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_uniform";
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_basic_armor";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_medic_armor";
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_assault_armor";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_grenadier_armor";
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_kama_armor";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_officer_armor";
+												};
+											};
+											class Item8
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_P1_HUD";
+												};
+											};
+											class Item9
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_ccVisor";
+												};
+											};
+											class Item10
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_binocular";
+												};
+											};
+											class Item11
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemMap";
+												};
+											};
+											class Item12
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemCompass";
+												};
+											};
+											class Item13
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemWatch";
+												};
+											};
+											class Item14
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemGPS";
+												};
+											};
+											class Item15
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Chemlight_yellow";
+												};
+											};
+											class Item16
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Chemlight_green";
+												};
+											};
+											class Item17
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Chemlight_red";
+												};
+											};
+											class Item18
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Chemlight_blue";
+												};
+											};
+											class Item19
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_White";
+												};
+											};
+											class Item20
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_IR";
+												};
+											};
+											class Item21
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_Orange";
+												};
+											};
+											class Item22
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_UltraHiOrange";
+												};
+											};
+											class Item23
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_HiWhite";
+												};
+											};
+											class Item24
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_HiYellow";
+												};
+											};
+											class Item25
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_HiGreen";
+												};
+											};
+											class Item26
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_HiRed";
+												};
+											};
+											class Item27
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_HiBlue";
+												};
+											};
+											class Item28
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellGreen";
+												};
+											};
+											class Item29
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellRed";
+												};
+											};
+											class Item30
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellOrange";
+												};
+											};
+											class Item31
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellPurple";
+												};
+											};
+											class Item32
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellBlue";
+												};
+											};
+											class Item33
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellYellow";
+												};
+											};
+											class Item34
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_DefusalKit";
+												};
+											};
+											class Item35
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="MineDetector";
+												};
+											};
+											class Item36
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_EarPlugs";
+												};
+											};
+											class Item37
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_PLX1";
+												};
+											};
+											class Item38
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_rps6_mag";
+												};
+											};
+											class Item39
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_plx1_aa_mag";
+												};
+											};
+											class Item40
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_plx1_ap_mag";
+												};
+											};
+											class Item41
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_plx1_at_mag";
+												};
+											};
+											class Item42
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Airborne_Light";
+												};
+											};
+											class Item43
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Heavy_Gunner_Vest";
+												};
+											};
+											class Item44
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_airborne_nco_armor";
+												};
+											};
+											class Item45
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Airborne_Officer";
+												};
+											};
+											class Item46
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Airborne_CFR";
+												};
+											};
+											class Item47
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_airborne_armor";
+												};
+											};
+											class Item48
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_flareRed_mag";
+												};
+											};
+											class Item49
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_smokeRed_mag";
+												};
+											};
+											class Item50
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Heavy_Vest";
+												};
+											};
+											class Item51
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SW_halfshield_Mag";
+												};
+											};
+											class Item52
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_P2_helmet";
+												};
+											};
+											class Item53
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="acc_flashlight";
+												};
+											};
+											class Item54
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="acc_pointer_IR";
+												};
+											};
+											class Item55
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_acc_pointer_green";
+												};
+											};
+											class Item56
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_white_x1_mag";
+												};
+											};
+											class Item57
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_CIR_x1_mag";
+												};
+											};
+											class Item58
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_Green_x1_mag";
+												};
+											};
+											class Item59
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_Red_x1_mag";
+												};
+											};
+											class Item60
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_Yellow_x1_mag";
+												};
+											};
+											class Item61
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_Blue_x1_mag";
+												};
+											};
+											class Item62
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_Cyan_x1_mag";
+												};
+											};
+											class Item63
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_40mm_Purple_x1_mag";
+												};
+											};
+											class Item64
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_Smoke_Grenade_shell";
+												};
+											};
+											class Item65
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_SmokeRed_Grenade_shell";
+												};
+											};
+											class Item66
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_SmokeGreen_Grenade_shell";
+												};
+											};
+											class Item67
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_SmokeYellow_Grenade_shell";
+												};
+											};
+											class Item68
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_SmokePurple_Grenade_shell";
+												};
+											};
+											class Item69
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_SmokeBlue_Grenade_shell";
+												};
+											};
+											class Item70
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_SmokeOrange_Grenade_shell";
+												};
+											};
+											class Item71
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HuntIR_M203";
+												};
+											};
+											class Item72
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="1Rnd_HE_Grenade_shell";
+												};
+											};
+											class Item73
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="UGL_FlareWhite_F";
+												};
+											};
+											class Item74
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="UGL_FlareGreen_F";
+												};
+											};
+											class Item75
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="UGL_FlareRed_F";
+												};
+											};
+											class Item76
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="UGL_FlareYellow_F";
+												};
+											};
+											class Item77
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="UGL_FlareCIR_F";
+												};
+											};
+											class Item78
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_40mm_Flare_white";
+												};
+											};
+											class Item79
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_40mm_Flare_red";
+												};
+											};
+											class Item80
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_40mm_Flare_green";
+												};
+											};
+											class Item81
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_40mm_Flare_ir";
+												};
+											};
+											class Item82
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_eng_helmet";
+												};
+											};
+											class Item83
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Engineer_Comms";
+												};
+											};
+											class Item84
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ToolKit";
+												};
+											};
+											class Item85
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Tripod";
+												};
+											};
+											class Item86
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Red";
+												};
+											};
+											class Item87
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Green";
+												};
+											};
+											class Item88
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Yellow";
+												};
+											};
+											class Item89
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_White";
+												};
+											};
+											class Item90
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_termDet_G";
+												};
+											};
+											class Item91
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_P2_HUD";
+												};
+											};
+											class Item92
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_cfr_armor";
+												};
+											};
+											class Item93
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_specialist_armor";
+												};
+											};
+											class Item94
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_recon_armor";
+												};
+											};
+											class Item95
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Laserbatteries";
+												};
+											};
+											class Item96
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="DCStun_Mag";
+												};
+											};
+											class Item97
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_commander_armor";
+												};
+											};
+											class Item98
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_lieutenant_armor";
+												};
+											};
+											class Item99
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_recon_nco_armor";
+												};
+											};
+											class Item100
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_recon_officer_armor";
+												};
+											};
+											class Item101
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Force_Recon_Commander";
+												};
+											};
+											class Item102
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Force_Recon_NCO";
+												};
+											};
+											class Item103
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Force_Recon_Officer";
+												};
+											};
+											class Item104
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Force_Recon";
+												};
+											};
+											class Item105
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Recon_Lieutenant";
+												};
+											};
+											class Item106
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Recon_Survival";
+												};
+											};
+											class Item107
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_Clones_HUD";
+												};
+											};
+											class Item108
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_commander_binocular_night";
+												};
+											};
+											class Item109
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_commander_binocular";
+												};
+											};
+											class Item110
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="swop_mag_flashbang";
+												};
+											};
+											class Item111
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShell";
+												};
+											};
+											class Item112
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_M84";
+												};
+											};
+											class Item113
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_M26_Clacker";
+												};
+											};
+											class Item114
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Clacker";
+												};
+											};
+											class Item115
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_SpottingScope";
+												};
+											};
+											class Item116
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_IR_Strobe_Item";
+												};
+											};
+											class Item117
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_MapTools";
+												};
+											};
+											class Item118
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Fortify";
+												};
+											};
+											class Item119
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_NVChip";
+												};
+											};
+											class Item120
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_NVChipClean";
+												};
+											};
+											class Item121
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_P1_helmet";
+												};
+											};
+											class Item122
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_ids_gar_army";
+												};
+											};
+											class Item123
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_ids_gar_medical";
+												};
+											};
+											class Item124
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Engineer_Vest_NCO";
+												};
+											};
+											class Item125
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Engineer_Vest";
+												};
+											};
+											class Item126
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Engineer_Vest_Officer";
+												};
+											};
+											class Item127
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="APERSMineDispenser_Mag";
+												};
+											};
+											class Item128
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_FlareTripMine_Mag";
+												};
+											};
+											class Item129
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TrainingMine_Mag";
+												};
+											};
+											class Item130
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_EntrenchingTool";
+												};
+											};
+											class Item131
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_adenosine";
+												};
+											};
+											class Item132
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_epinephrine";
+												};
+											};
+											class Item133
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_personalAidKit";
+												};
+											};
+											class Item134
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_WaterBottle";
+												};
+											};
+											class Item135
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_MRE_ChickenTikkaMasala";
+												};
+											};
+											class Item136
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV";
+												};
+											};
+											class Item137
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV_250";
+												};
+											};
+											class Item138
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV_500";
+												};
+											};
+											class Item139
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bodyBag";
+												};
+											};
+											class Item140
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_morphine";
+												};
+											};
+											class Item141
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV";
+												};
+											};
+											class Item142
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV_250";
+												};
+											};
+											class Item143
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV_500";
+												};
+											};
+											class Item144
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_elasticBandage";
+												};
+											};
+											class Item145
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV";
+												};
+											};
+											class Item146
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV_250";
+												};
+											};
+											class Item147
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV_500";
+												};
+											};
+											class Item148
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_packingBandage";
+												};
+											};
+											class Item149
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_splint";
+												};
+											};
+											class Item150
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_tourniquet";
+												};
+											};
+											class Item151
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_CableTie";
+												};
+											};
+											class Item152
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_belt_bag";
+												};
+											};
+											class Item153
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_backpack_s";
+												};
+											};
+											class Item154
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_LR_attachment";
+												};
+											};
+											class Item155
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_RTO_pack";
+												};
+											};
+											class Item156
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_rangefinder_HUD";
+												};
+											};
+											class Item157
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_bag_belt";
+												};
+											};
+											class Item158
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_backpack_s_RTO";
+												};
+											};
+											class Item159
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_fieldDressing";
+												};
+											};
+											class Item160
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_surgicalKit";
+												};
+											};
+											class Item161
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_DP23";
+												};
+											};
+											class Item162
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_Valken38XBlasterRifle";
+												};
+											};
+											class Item163
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="EWEB_Bag";
+												};
+											};
+											class Item164
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_B_Filterpack_Base";
+												};
+											};
+											class Item165
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_DP23_mag";
+												};
+											};
+											class Item166
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_Valken38XBlasterRifle_Mag";
+												};
+											};
+											class Item167
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="C7_Remote_Mag";
+												};
+											};
+											class Item168
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="C12_Remote_Mag";
+												};
+											};
+											class Item169
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="UNSCMine_Range_Mag";
+												};
+											};
+											class Item170
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="M168_Remote_Mag";
+												};
+											};
+											class Item171
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="212th_MPC_MK1_F";
+												};
+											};
+											class Item172
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TermMineC_Mag";
+												};
+											};
+											class Item173
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TermMineB_Mag";
+												};
+											};
+											class Item174
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_ZH73_Mag";
+												};
+											};
+											class Item175
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="212th_600Rnd_z6_mag";
+												};
+											};
+											class Item176
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_Z6_mag";
+												};
+											};
+											class Item177
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_Tactical_Commander";
+												};
+											};
+											class Item178
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_commander_armor_rank";
+												};
+											};
+											class Item179
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_commander_armor_black";
+												};
+											};
+											class Item180
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_mc_uniform";
+												};
+											};
+											class Item181
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_P1Commander_uniform";
+												};
+											};
+											class Item182
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_CEE_P1_MC_Visor";
+												};
+											};
+											class Item183
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SW_SquadShield_Mag";
+												};
+											};
+											class Item184
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_Mag";
+												};
+											};
+											class Item185
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_Mag";
+												};
+											};
+											class Item186
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_huntir_Mag";
+												};
+											};
+											class Item187
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_flare_white_Mag";
+												};
+											};
+											class Item188
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_flare_red_Mag";
+												};
+											};
+											class Item189
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_flare_gree_Mag";
+												};
+											};
+											class Item190
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_smoke_white_Mag";
+												};
+											};
+											class Item191
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_smoke_red_Mag";
+												};
+											};
+											class Item192
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_smoke_purple_Mag";
+												};
+											};
+											class Item193
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_smoke_blue_Mag";
+												};
+											};
+											class Item194
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC15A_UGL_smoke_green_Mag";
+												};
+											};
+											class Item195
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_ENG_RS_Dikki";
+												};
+											};
+											class Item196
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_P2_Kiri";
+												};
+											};
+											class Item197
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_P2_Helm_Med";
+												};
+											};
+											class Item198
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_CloneBase";
+												};
+											};
+											class Item199
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_CloneMed";
+												};
+											};
+											class Item200
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_Blaze_Helm";
+												};
+											};
+											class Item201
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_BlazeBase";
+												};
+											};
+											class Item202
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_Blaze_Gear";
+												};
+											};
+											class Item203
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_Blaze_BP";
+												};
+											};
+											class Item204
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_b2gun";
+												};
+											};
+											class Item205
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_b2gun_Mag";
+												};
+											};
+											class Item206
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_b2rocket_Mag";
+												};
+											};
+											class Item207
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_aatKit";
+												};
+											};
+											class Item208
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_accuvac";
+												};
+											};
+											class Item209
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_X_AED";
+												};
+											};
+											class Item210
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_AED";
+												};
+											};
+											class Item211
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_guedel";
+												};
+											};
+											class Item212
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_chestSeal";
+												};
+											};
+											class Item213
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_larynx";
+												};
+											};
+											class Item214
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="kat_Pulseoximeter";
+												};
+											};
+											class Item215
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15S";
+												};
+											};
+											class Item216
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15A_ugl";
+												};
+											};
+											class Item217
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15A_ugl_plastic";
+												};
+											};
+											class Item218
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15A";
+												};
+											};
+											class Item219
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15A_plastic";
+												};
+											};
+											class Item220
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15S_mag";
+												};
+											};
+											class Item221
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_stun_mag_short";
+												};
+											};
+											class Item222
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_stun_mag_long";
+												};
+											};
+											class Item223
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SKX_JLTS_DC15A_mag";
+												};
+											};
+											class Item224
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_clone_comlink";
+												};
+											};
+											class Item225
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SLDT_CloneBackpack_Officer_502";
+												};
+											};
+											class Item226
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_SpraypaintGreen";
+												};
+											};
+											class Item227
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_SpraypaintRed";
+												};
+											};
+											class Item228
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_SpraypaintBlue";
+												};
+											};
+											class Item229
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_SpraypaintBlack";
+												};
+											};
+											class Item230
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLB_clone_officer_armor_black";
+												};
+											};
+											class Item231
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_backpack";
+												};
+											};
+											class Item232
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_JLTS_Clone_backpack_medic";
+												};
+											};
+											class Item233
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_repairkit_weapon";
+												};
+											};
+											class Item234
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_DC15";
+												};
+											};
+											class Item235
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_DC15ABlasterRifle";
+												};
+											};
+											class Item236
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_DC15ABlasterRifle_mod1";
+												};
+											};
+											class Item237
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWOP_DC15ABlasterRifle_mod0";
+												};
+											};
+											class Item238
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_DC_r17a";
+												};
+											};
+											class Item239
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RD501_DC_r17";
+												};
+											};
+											class Item240
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ls_weapon_dualDC17_secondary";
+												};
+											};
+											class Item241
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="JLTS_DC17SA";
+												};
+											};
+											class Item242
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SWLW_DC17";
+												};
+											};
+											class Item243
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="3AS_DC17STest_F";
+												};
+											};
+											class Item244
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="3AS_DC17S_F";
+												};
+											};
+											class Item245
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="212th_JLTS_DC17H";
+												};
+											};
+											class Item246
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ls_weapon_dc15a_ugl";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 	};
