@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13713;
+		nextID=13738;
 	};
 	class Camera
 	{
-		pos[]={2103.7896,1137.0491,7486.1353};
-		dir[]={-0.31517243,-0.65425992,0.68746775};
-		up[]={-0.27265975,0.7562691,0.59473699};
-		aside[]={0.90902263,-4.6711648e-008,0.41674578};
+		pos[]={9367.1201,49.28405,468.02332};
+		dir[]={-0.38730374,-0.42911345,0.81602001};
+		up[]={-0.18400142,0.9032405,0.38767669};
+		aside[]={0.90342033,-3.1318632e-007,0.42878509};
 	};
 };
 binarizationWanted=0;
@@ -2255,7 +2255,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=637;
+		items=636;
 		class Item0
 		{
 			dataType="Object";
@@ -68524,8 +68524,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68534,10 +68534,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68600,8 +68600,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68610,10 +68610,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68693,8 +68693,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68703,10 +68703,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68769,8 +68769,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68779,10 +68779,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68862,8 +68862,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68872,10 +68872,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68938,8 +68938,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68948,10 +68948,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -69030,8 +69030,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -69040,10 +69040,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -69106,8 +69106,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -69116,10 +69116,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -75707,8 +75707,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -75717,10 +75717,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -75783,8 +75783,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -75793,10 +75793,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -95015,8 +95015,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -95025,10 +95025,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -95091,8 +95091,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -95101,10 +95101,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -98496,8 +98496,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -98506,10 +98506,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -98572,8 +98572,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -98582,10 +98582,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -107327,8 +107327,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -107337,10 +107337,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -107403,8 +107403,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -107413,10 +107413,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -147217,6 +147217,7 @@ class Mission
 				sizeB=1621.082;
 				repeatable=1;
 				activationBy="WEST";
+				isServerOnly=1;
 				effectSound="RadiationLow";
 			};
 			id=43266;
@@ -147237,6 +147238,7 @@ class Mission
 				sizeB=966.375;
 				repeatable=1;
 				activationBy="WEST";
+				isServerOnly=1;
 				effectSound="RadiationMedium";
 			};
 			id=43268;
@@ -147257,6 +147259,7 @@ class Mission
 				sizeB=450.12601;
 				repeatable=1;
 				activationBy="WEST";
+				isServerOnly=1;
 				effectSound="RadiationHigh";
 			};
 			id=43269;
@@ -148311,18 +148314,6 @@ class Mission
 				};
 				nAttributes=1;
 			};
-		};
-		class Item636
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9336.0391,18.751942,500.23999};
-			};
-			name="startup_news";
-			init="TAG_fnc_Article ={ " \n "[ " \n "[ " \n "[""title"",""КНС замечена на острове""], " \n "[""meta"",[""Екатирина Святославская"",[2035,2,24,11,38],""CET""]], " \n "[""textbold"",""Это приход врагов на остров?""], " \n "[""image"",[""\212th\units\212th_unit_main\textures\cishd.paa"",""Фотография баннера""]], " \n "[""box"",[""\lsd_units_redfor\cis\_ui\editorpreviews\b1_standardsquadlead.jpg"",""Как эффективно убивать дроидов? Нужно всего лишь...""]], " \n "[""text"",""Сегодня по всему острову были замечены знаки КНС на стенах. Чтобы это могло значить? Пришествие КНС на эту планету, или просто кучка дурачков? Мы пока что не знаем. ВАР заявила что уже расследует инцидент, но официальный ответ пока дан не был. Мы решили провести незавимисое расследование, информация ниже будет обновляться со временем.""], " \n "[""textlocked"",[""10:00: Началось расследование."",""Оформите подписку""]], " \n "[""author"",[""\a3\Missions_F_Orange\Data\Img\avatar_journalist_ca.paa"",""Журналист Екатирина""]] " \n "] " \n "] call BIS_fnc_showAANArticle; " \n "}; " \n " " \n "player createDiaryRecord [""diary"", [""Новости"", "" " \n "<execute expression='[] call TAG_fnc_Article'>Новость 1</execute> " \n """]];";
-			id=45964;
-			type="Logic";
 		};
 	};
 };
