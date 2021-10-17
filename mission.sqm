@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13763;
+		nextID=13788;
 	};
 	class Camera
 	{
-		pos[]={8351.125,894.82538,1150.9255};
-		dir[]={-0.87426472,-0.35720274,0.3288559};
-		up[]={-0.33435938,0.93400806,0.12576959};
-		aside[]={0.35207978,-6.7993096e-007,0.93600494};
+		pos[]={4109.4766,498.09402,4373.748};
+		dir[]={-0.71722138,-0.61345524,0.33068159};
+		up[]={-0.55710256,0.78971165,0.25685692};
+		aside[]={0.41871372,-5.8570004e-007,0.90815639};
 	};
 };
 binarizationWanted=0;
@@ -68524,8 +68524,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68534,10 +68534,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68600,8 +68600,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68610,10 +68610,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68693,8 +68693,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68703,10 +68703,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68769,8 +68769,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68779,10 +68779,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -68862,8 +68862,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -68872,10 +68872,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -68938,8 +68938,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -68948,10 +68948,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -69030,8 +69030,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -69040,10 +69040,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -69106,8 +69106,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -69116,10 +69116,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -75707,8 +75707,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -75717,10 +75717,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -75783,8 +75783,8 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -75793,10 +75793,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -95015,8 +95015,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -95025,10 +95025,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -95091,8 +95091,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -95101,10 +95101,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -98496,8 +98496,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -98506,10 +98506,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -98572,8 +98572,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -98582,10 +98582,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -107327,8 +107327,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -107337,10 +107337,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="WhiteHead_01";
+											value=0;
 										};
 									};
 								};
@@ -107403,8 +107403,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -107413,10 +107413,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="WhiteHead_01";
 										};
 									};
 								};
@@ -147213,7 +147213,7 @@ class Mission
 			{
 				name="radl";
 				text="Низкая радиация";
-				condition="thislist";
+				condition="call{player in thisList}";
 				sizeA=1616.8459;
 				sizeB=1621.082;
 				repeatable=1;
@@ -147233,9 +147233,9 @@ class Mission
 			{
 				name="radm";
 				text="Средняя радиация";
-				condition="thislist";
-				onActivation="PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
-				onDeactivation="ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "";
+				condition="call{player in thisList}";
+				onActivation="call{PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;}";
+				onDeactivation="call{ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;}" \n "";
 				sizeA=1010.5;
 				sizeB=966.375;
 				repeatable=1;
@@ -147255,9 +147255,9 @@ class Mission
 			{
 				name="radh";
 				text="Высокая радиация";
-				condition="thislist";
-				onActivation="ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "" \n "PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,1.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,2.1,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
-				onDeactivation="PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;";
+				condition="call{player in thisList}";
+				onActivation="call{ppEffectDestroy PP_radial;  " \n "ppEffectDestroy PP_colorC;  " \n "ppEffectDestroy PP_film;" \n "" \n "PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,1.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,2.1,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;}";
+				onDeactivation="call{PP_radial = ppEffectCreate [""radialBlur"",100]; " \n "                        PP_radial ppEffectEnable true; " \n "                        PP_radial ppEffectAdjust [0.15,0.16,0.43,0.44]; " \n "                        PP_radial ppEffectCommit 1; " \n "                        PP_colorC = ppEffectCreate [""ColorCorrections"",1500]; " \n "                        PP_colorC ppEffectEnable true; " \n "                        PP_colorC ppEffectAdjust [1,0.9,0.21,[0.33,0.33,0.33,0.23],[1,1,1,1],[0.33,0.33,0.33,0],[0,0,0,0,0,0,4]]; " \n "                        PP_colorC ppEffectCommit 1; " \n "                        PP_film = ppEffectCreate [""FilmGrain"",2000]; " \n "                        PP_film ppEffectEnable true; " \n "                        PP_film ppEffectAdjust [0.74,1.16,0.4,0.5,0.5,true]; " \n "                        PP_film ppEffectCommit 1;}";
 				sizeA=445.233;
 				sizeB=450.12601;
 				repeatable=1;
