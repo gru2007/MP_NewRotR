@@ -31,8 +31,7 @@ VVS_Air = [
 "3AS_LAAT_Mk1",
 "3AS_LAAT_Mk1Lights",
 "3AS_LAATC",
-"3AS_V19_Base",
-"3AS_BTLB_Bomber"
+"3AS_V19_Base"
 ];
 
 VVS_Car_Mercenary = [
