@@ -11,18 +11,26 @@ waitUntil {vehicle player == player};
 [] execVM "legacy\intro\introtext.sqf";
 
 /******                            Inf Ammo                             ******/
-//Отключено до лучших времён
-/*
-MagazineBlackList = [
-  "SWLW_plx1_at_mag",
-  "SWLW_plx1_ap_mag",
-  "SWLW_plx1_aa_mag"
+MagazineWhiteList = [
+  "JLTS_DC15A_mag", //DC-15A
+  "JLTS_DC15S_mag", //DC-15S
+  "JLTS_DC15X_mag", //DC-15X
+  "JLTS_Z6_mag", //Z-6
+  "3AS_60Rnd_EC50_Mag", //Westar M5
+  "212th_15rnd_Energy_dc15XM_mag", //DC-15XM
+  "212th_3rnd_Plasma_dc15XM_mag", //DC-15XM
+  "JLTS_DC17SA_mag", //DC-17SA
+  "3AS_15Rnd_EC30_mag", //DC-15SA Razor
+  "3AS_Chaingun_Drum_Mag", //Chaingun
+  "3AS_100Rnd_EC40_mag", //DC-17M
+  "3AS_5Rnd_EC80_mag", //DC-17M
+  "3AS_AntiArmour_mag" //DC-17M
 ];
 player addEventHandler ["Reloaded", { 
-  if not (((_this select 3) select 0) in MagazineBlackList) then { 
+  if (((_this select 3) select 0) in MagazineWhiteList) then { 
     (_this select 0) addMagazine ((_this select 3) select 0); 
   }; 
-}];*/
+}];
 
 /******                            Zeus list                             ******/
 MCH_ZEUS_LIST = [{
