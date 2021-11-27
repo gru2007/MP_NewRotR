@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=274;
+		nextID=314;
 	};
 	class Camera
 	{
-		pos[]={6104.4854,223.77913,4772.7104};
-		dir[]={0.1141225,-0.46681449,-0.87708026};
-		up[]={0.060254559,0.88427138,-0.46307233};
-		aside[]={-0.99174333,-3.6350684e-008,-0.12904374};
+		pos[]={-2273.4702,117.4329,6303.7676};
+		dir[]={-0.23008414,-0.60628128,0.76124138};
+		up[]={-0.17541069,0.79524809,0.58035278};
+		aside[]={0.95723379,-1.7869752e-008,0.28932285};
 	};
 };
 binarizationWanted=0;
-sourceName="Geonosis";
+sourceName="MP_NewRotR";
 addons[]=
 {
 	"442_ships_arquintens",
@@ -18957,7 +18957,7 @@ class Mission
 					{
 					};
 					id=2556;
-					atlOffset=0.30499268;
+					atlOffset=-138.42226;
 				};
 				class Item173
 				{
@@ -19236,6 +19236,7 @@ class Mission
 					{
 					};
 					id=2558;
+					atlOffset=-138.42226;
 				};
 				class Item174
 				{
@@ -19514,6 +19515,7 @@ class Mission
 					{
 					};
 					id=2560;
+					atlOffset=-138.42226;
 				};
 				class Item175
 				{
@@ -19787,6 +19789,7 @@ class Mission
 					{
 					};
 					id=2562;
+					atlOffset=-138.42226;
 				};
 				class Item176
 				{
@@ -20060,6 +20063,7 @@ class Mission
 					{
 					};
 					id=2564;
+					atlOffset=-138.42226;
 				};
 				class Item177
 				{
@@ -20337,6 +20341,7 @@ class Mission
 					{
 					};
 					id=2566;
+					atlOffset=-138.42226;
 				};
 				class Item178
 				{
@@ -20619,6 +20624,7 @@ class Mission
 					{
 					};
 					id=2568;
+					atlOffset=-138.42226;
 				};
 				class Item179
 				{
@@ -20902,6 +20908,7 @@ class Mission
 					{
 					};
 					id=2570;
+					atlOffset=-138.42226;
 				};
 				class Item180
 				{
@@ -21267,11 +21274,11 @@ class Mission
 					{
 					};
 					id=2674;
-					atlOffset=0.00033569336;
+					atlOffset=-138.42226;
 				};
 			};
 			id=2679;
-			atlOffset=0.027648926;
+			atlOffset=-57.751091;
 		};
 		class Item10
 		{
@@ -39371,7 +39378,7 @@ class Mission
 					name="Терминалы телепорта_1";
 					class Entities
 					{
-						items=2;
+						items=1;
 						class Item0
 						{
 							dataType="Object";
@@ -39388,47 +39395,6 @@ class Mission
 								name="ztt_nonrp";
 							};
 							id=3137;
-							type="Land_OPTRE_vidphone_terminal";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={-2280.728,112.67238,6319.8379};
-								angles[]={0,4.6785121,0};
-							};
-							side="Empty";
-							flags=5;
-							class Attributes
-							{
-								init="call{[this, ""Переместиться в Киллхаус"", [], ""#101010"", ""true"", 1] call ZONT_fnc_addTeleportTerminal}";
-								name="ztt_nonrp_1";
-							};
-							id=3404;
 							type="Land_OPTRE_vidphone_terminal";
 							class CustomAttributes
 							{
