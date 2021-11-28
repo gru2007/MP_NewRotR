@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3589;
+		nextID=3596;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=314;
+		nextID=354;
 	};
 	class Camera
 	{
-		pos[]={-2273.4702,117.4329,6303.7676};
-		dir[]={-0.23008414,-0.60628128,0.76124138};
-		up[]={-0.17541069,0.79524809,0.58035278};
-		aside[]={0.95723379,-1.7869752e-008,0.28932285};
+		pos[]={2817.2129,1046.0496,1042.4326};
+		dir[]={0.85702521,-0.51358098,-0.044435252};
+		up[]={0.51298475,0.85798097,-0.026596989};
+		aside[]={-0.05178478,2.0570951e-007,-0.99874729};
 	};
 };
 binarizationWanted=0;
@@ -1945,7 +1945,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=74;
+		items=77;
 		class Item0
 		{
 			dataType="Object";
@@ -18703,6 +18703,8 @@ class Mission
 							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -18762,6 +18764,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
 									class Value
@@ -18911,25 +18932,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -18949,7 +18951,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -18957,7 +18997,7 @@ class Mission
 					{
 					};
 					id=2556;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item173
 				{
@@ -18971,13 +19011,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6039.895,215.06662,5118.7144};
+								position[]={6039.895,215.06642,5118.7148};
 								angles[]={0,1.5707964,0};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -19037,9 +19079,29 @@ class Mission
 							};
 							id=2559;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -19190,25 +19252,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -19228,7 +19271,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -19236,7 +19317,7 @@ class Mission
 					{
 					};
 					id=2558;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item174
 				{
@@ -19250,13 +19331,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6045.5869,215.06662,5120.7139};
+								position[]={6045.5869,215.06642,5120.7139};
 								angles[]={0,4.712389,0};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -19316,9 +19399,29 @@ class Mission
 							};
 							id=2561;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -19469,25 +19572,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -19507,7 +19591,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -19515,7 +19637,7 @@ class Mission
 					{
 					};
 					id=2560;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item175
 				{
@@ -19529,13 +19651,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6039.8408,215.06662,5130.4077};
+								position[]={6039.8408,215.06642,5130.4077};
 								angles[]={0,1.5707964,0};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -19590,9 +19714,29 @@ class Mission
 							};
 							id=2563;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -19743,25 +19887,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -19781,7 +19906,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -19789,7 +19952,7 @@ class Mission
 					{
 					};
 					id=2562;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item176
 				{
@@ -19803,13 +19966,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6045.6768,215.06662,5132.4116};
+								position[]={6045.6768,215.06642,5132.4116};
 								angles[]={0,4.712389,0};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -19864,9 +20029,29 @@ class Mission
 							};
 							id=2565;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -20017,25 +20202,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -20055,7 +20221,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -20063,7 +20267,7 @@ class Mission
 					{
 					};
 					id=2564;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item177
 				{
@@ -20077,12 +20281,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5983.7705,215.06662,5077.4722};
+								position[]={5983.77,215.06642,5077.4717};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -20142,9 +20348,29 @@ class Mission
 							};
 							id=2567;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -20295,25 +20521,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -20333,7 +20540,64 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_allowSprint";
+									expression="_this allowSprint _value";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=6;
 							};
 						};
 					};
@@ -20341,7 +20605,7 @@ class Mission
 					{
 					};
 					id=2566;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item178
 				{
@@ -20355,12 +20619,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5977.9258,215.06662,5077.4663};
+								position[]={5977.9258,215.06642,5077.4668};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -20425,9 +20691,29 @@ class Mission
 							};
 							id=2569;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -20578,25 +20864,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -20616,7 +20883,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -20624,7 +20929,7 @@ class Mission
 					{
 					};
 					id=2568;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item179
 				{
@@ -20638,13 +20943,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5987.6206,215.06662,5083.1411};
+								position[]={5987.6211,215.06642,5083.1406};
 								angles[]={0,3.1415927,0};
 							};
 							side="West";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
+								disableSimulation=1;
+								ignoreByDynSimulGrid=1;
 								class Inventory
 								{
 									class uniform
@@ -20709,9 +21016,29 @@ class Mission
 							};
 							id=2571;
 							type="JLTS_Clone_P2_DC15A";
+							atlOffset=0.30499268;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -20862,25 +21189,6 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.02;
-										};
-									};
-								};
 								class Attribute2
 								{
 									property="face";
@@ -20900,7 +21208,45 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.02;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=5;
 							};
 						};
 					};
@@ -20908,7 +21254,7 @@ class Mission
 					{
 					};
 					id=2570;
-					atlOffset=-138.42226;
+					atlOffset=0.30499268;
 				};
 				class Item180
 				{
@@ -21274,11 +21620,11 @@ class Mission
 					{
 					};
 					id=2674;
-					atlOffset=-138.42226;
+					atlOffset=0.00033569336;
 				};
 			};
 			id=2679;
-			atlOffset=-57.751091;
+			atlOffset=0.027648926;
 		};
 		class Item10
 		{
@@ -34413,7 +34759,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={3130.8862,78.38459,662.67828};
+										position[]={3130.886,78.384583,662.67798};
 										angles[]={0,4.5941076,0};
 									};
 									side="West";
@@ -34476,7 +34822,6 @@ class Mission
 									};
 									id=3054;
 									type="3as_clone_Engineer";
-									atlOffset=-7.6293945e-006;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -34563,11 +34908,10 @@ class Mission
 							{
 							};
 							id=3053;
-							atlOffset=-7.6293945e-006;
 						};
 					};
 					id=3051;
-					atlOffset=1.5367661;
+					atlOffset=1.5367813;
 				};
 				class Item1
 				{
@@ -34629,8 +34973,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4713.791,1129.3311,-599.97339};
-										angles[]={0,5.8803058,0};
+										position[]={4713.791,1129.3315,-599.97302};
+										angles[]={0,5.880311,0};
 									};
 									side="West";
 									flags=7;
@@ -34655,6 +34999,7 @@ class Mission
 									};
 									id=3060;
 									type="3as_clone_Engineer";
+									atlOffset=0.00048828125;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -34741,14 +35086,15 @@ class Mission
 							{
 							};
 							id=3059;
+							atlOffset=0.00048828125;
 						};
 					};
 					id=3057;
-					atlOffset=3.0686035;
+					atlOffset=3.0688477;
 				};
 			};
 			id=3062;
-			atlOffset=3.0686035;
+			atlOffset=3.0688477;
 		};
 		class Item16
 		{
@@ -39422,11 +39768,10 @@ class Mission
 						};
 					};
 					id=3136;
-					atlOffset=0.56002045;
 				};
 			};
 			id=3138;
-			atlOffset=0.56002045;
+			atlOffset=0.84002686;
 		};
 		class Item20
 		{
@@ -66910,14 +67255,14 @@ class Mission
 			name="Armor HQ A91";
 			class Entities
 			{
-				items=110;
+				items=90;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3154.0405,82.282494,648.37628};
-						angles[]={0.019996032,4.7551813,0.099666774};
+						position[]={3154.5605,81.431053,648.53394};
+						angles[]={6.2455592,4.7551813,0.099666774};
 					};
 					side="Empty";
 					flags=4;
@@ -66927,14 +67272,14 @@ class Mission
 					};
 					id=3406;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.013839722;
+					atlOffset=-0.89495087;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3092.2002,81.38385,621.51855};
+						position[]={3092.2002,80.725983,621.51855};
 						angles[]={6.2432051,0.046881638,0.039980642};
 					};
 					side="Empty";
@@ -66945,7 +67290,7 @@ class Mission
 					};
 					id=3407;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=-0.00039672852;
+					atlOffset=-0.65826416;
 				};
 				class Item2
 				{
@@ -67042,78 +67387,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3178.5383,85.623177,732.28394};
-						angles[]={6.2133002,5.5581636,0.14889148};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3413;
-					type="3as_Backless_Mortar_Pit_Trench";
-					atlOffset=-0.011100769;
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3044.5808,80.593567,738.12891};
-						angles[]={6.233232,3.973783,6.2631865};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3414;
-					type="3as_Backless_Mortar_Pit_Trench";
-					atlOffset=0.00046539307;
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3039.4788,74.415627,605.12939};
-						angles[]={6.233232,2.4424138,6.2631865};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3415;
-					type="3as_Backless_Mortar_Pit_Trench";
-					atlOffset=0.0093994141;
-				};
-				class Item10
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3172.8142,80.586853,598.55725};
-						angles[]={6.1835189,0.83221138,0.17809334};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3416;
-					type="3as_Backless_Mortar_Pit_Trench";
-					atlOffset=0.016220093;
-				};
-				class Item11
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={3061.7332,79.146477,664.30518};
 						angles[]={6.2432079,1.6164889,0};
 					};
@@ -67127,7 +67400,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_straight_long_cis";
 					atlOffset=0.0021438599;
 				};
-				class Item12
+				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67145,7 +67418,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_watchtower_cis";
 					atlOffset=0.0054168701;
 				};
-				class Item13
+				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67163,12 +67436,12 @@ class Mission
 					type="3as_prop_fob_modular_wall_watchtower_cis";
 					atlOffset=0.0028915405;
 				};
-				class Item14
+				class Item10
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3124.4353,79.824516,621.00824};
+						position[]={3125.2385,79.866432,620.99957};
 						angles[]={6.2531939,0.042110782,0.059925474};
 					};
 					side="Empty";
@@ -67179,15 +67452,14 @@ class Mission
 					};
 					id=3420;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0057754517;
 				};
-				class Item15
+				class Item11
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3087.9746,78.101669,622.43585};
-						angles[]={6.163754,0.042110782,0.17809334};
+						position[]={3087.9683,77.479027,622.62201};
+						angles[]={6.1656537,0.063111529,0.0021590239};
 					};
 					side="Empty";
 					flags=4;
@@ -67197,9 +67469,9 @@ class Mission
 					};
 					id=3421;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0072250366;
+					atlOffset=-0.62081146;
 				};
-				class Item16
+				class Item12
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67217,12 +67489,12 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
 					atlOffset=-0.021568298;
 				};
-				class Item17
+				class Item13
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3077.7637,77.709152,620.01465};
+						position[]={3077.8169,77.445,619.93658};
 						angles[]={6.2631893,4.7532649,0.019996032};
 					};
 					side="Empty";
@@ -67233,9 +67505,9 @@ class Mission
 					};
 					id=3423;
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
-					atlOffset=0.013290405;
+					atlOffset=-0.25011444;
 				};
-				class Item18
+				class Item14
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67253,12 +67525,12 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_cis";
 					atlOffset=-0.023071289;
 				};
-				class Item19
+				class Item15
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3041.7402,81.337212,622.96063};
+						position[]={3041.7402,77.320946,622.96063};
 						angles[]={6.2432079,1.6136668,0};
 					};
 					side="Empty";
@@ -67269,9 +67541,8 @@ class Mission
 					};
 					id=3425;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0021438599;
 				};
-				class Item20
+				class Item16
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67289,12 +67560,12 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_cis";
 					atlOffset=0.0021438599;
 				};
-				class Item21
+				class Item17
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3057.5452,80.814629,605.74677};
+						position[]={3057.5452,76.802895,605.74677};
 						angles[]={6.2531996,0.042110782,0.010000871};
 					};
 					side="Empty";
@@ -67305,9 +67576,8 @@ class Mission
 					};
 					id=3427;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.001335144;
 				};
-				class Item22
+				class Item18
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67325,7 +67595,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_cis";
 					atlOffset=0.045372009;
 				};
-				class Item23
+				class Item19
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67343,7 +67613,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_watchtower_cis";
 					atlOffset=0.0038528442;
 				};
-				class Item24
+				class Item20
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67361,7 +67631,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_watchtower_cis";
 					atlOffset=0.009262085;
 				};
-				class Item25
+				class Item21
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67379,7 +67649,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_straight_long_cis";
 					atlOffset=0.0013427734;
 				};
-				class Item26
+				class Item22
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67397,7 +67667,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_straight_long_cis";
 					atlOffset=0.0021362305;
 				};
-				class Item27
+				class Item23
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67415,7 +67685,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
 					atlOffset=-0.016548157;
 				};
-				class Item28
+				class Item24
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67433,7 +67703,7 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
 					atlOffset=-0.017471313;
 				};
-				class Item29
+				class Item25
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67451,12 +67721,12 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_cis";
 					atlOffset=0.03427887;
 				};
-				class Item30
+				class Item26
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3063.3665,82.567451,734.97571};
+						position[]={3063.3665,82.563583,734.97571};
 						angles[]={6.233232,3.1880534,6.2631865};
 					};
 					side="Empty";
@@ -67467,9 +67737,8 @@ class Mission
 					};
 					id=3436;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.003868103;
 				};
-				class Item31
+				class Item27
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67487,13 +67756,13 @@ class Mission
 					type="3as_prop_fob_modular_wall_corner_cis";
 					atlOffset=0.015228271;
 				};
-				class Item32
+				class Item28
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3046.1218,81.91082,719.23273};
-						angles[]={6.2432122,1.6164889,6.2432051};
+						position[]={3046.0811,81.900475,719.03961};
+						angles[]={6.2432394,1.6141911,0.017497826};
 					};
 					side="Empty";
 					flags=4;
@@ -67503,15 +67772,14 @@ class Mission
 					};
 					id=3438;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0042572021;
 				};
-				class Item33
+				class Item29
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3051.1721,82.468697,730.92053};
-						angles[]={6.2232599,1.6164889,0};
+						position[]={3051.1343,82.443016,730.73969};
+						angles[]={6.2270412,1.6164889,-0};
 					};
 					side="Empty";
 					flags=4;
@@ -67521,15 +67789,14 @@ class Mission
 					};
 					id=3439;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=0.015762329;
 				};
-				class Item34
+				class Item30
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3175.9026,89.354233,712.82483};
-						angles[]={6.153913,4.7597346,0.049953286};
+						position[]={3175.9026,88.086357,712.82483};
+						angles[]={6.260891,4.7597346,0.049953286};
 					};
 					side="Empty";
 					flags=4;
@@ -67539,14 +67806,14 @@ class Mission
 					};
 					id=3440;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.048027039;
+					atlOffset=-1.2198486;
 				};
-				class Item35
+				class Item31
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3159.1624,89.011482,731.2973};
+						position[]={3159.1624,87.840225,731.2973};
 						angles[]={6.1934304,3.1848419,0.069885373};
 					};
 					side="Empty";
@@ -67557,15 +67824,15 @@ class Mission
 					};
 					id=3441;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.037490845;
+					atlOffset=-1.1337662;
 				};
-				class Item36
+				class Item32
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3092.8013,81.837761,715.43713};
-						angles[]={6.233232,3.1848419,6.2132993};
+						position[]={3092.5559,81.566734,715.50983};
+						angles[]={6.2333474,3.1804972,0.017226366};
 					};
 					side="Empty";
 					flags=4;
@@ -67575,14 +67842,14 @@ class Mission
 					};
 					id=3442;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0098648071;
+					atlOffset=-0.28197479;
 				};
-				class Item37
+				class Item33
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3104.6648,81.949287,714.9447};
+						position[]={3104.4458,81.547119,715.01721};
 						angles[]={6.2432051,3.1848419,6.2631836};
 					};
 					side="Empty";
@@ -67593,15 +67860,15 @@ class Mission
 					};
 					id=3443;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0032196045;
+					atlOffset=-0.40677643;
 				};
-				class Item38
+				class Item34
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3116.5452,82.182549,714.2038};
-						angles[]={6.153913,3.1848419,0.01999305};
+						position[]={3116.4817,81.517776,714.50861};
+						angles[]={6.243392,3.1848526,0.01999305};
 					};
 					side="Empty";
 					flags=4;
@@ -67611,15 +67878,15 @@ class Mission
 					};
 					id=3444;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.023025513;
+					atlOffset=-0.68010712;
 				};
-				class Item39
+				class Item35
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3128.4612,82.607552,713.53314};
-						angles[]={6.0954213,3.1848419,0.049961641};
+						position[]={3128.5195,81.855522,714.20789};
+						angles[]={6.1780262,3.1848509,0.049961641};
 					};
 					side="Empty";
 					flags=4;
@@ -67629,15 +67896,15 @@ class Mission
 					};
 					id=3445;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0043258667;
+					atlOffset=-0.83207703;
 				};
-				class Item40
+				class Item36
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3158.822,83.558914,694.31085};
-						angles[]={6.163754,4.7545733,0.19740006};
+						position[]={3159.481,83.589912,694.22321};
+						angles[]={6.2423472,4.7605977,0.052389283};
 					};
 					side="Empty";
 					flags=4;
@@ -67647,14 +67914,13 @@ class Mission
 					};
 					id=3446;
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
-					atlOffset=0.018203735;
 				};
-				class Item41
+				class Item37
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3139.072,83.448708,716.54193};
+						position[]={3138.9216,82.643211,716.96667};
 						angles[]={6.2232599,1.6128168,0.059925474};
 					};
 					side="Empty";
@@ -67665,14 +67931,14 @@ class Mission
 					};
 					id=3447;
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
-					atlOffset=-0.16437531;
+					atlOffset=-1.0225449;
 				};
-				class Item42
+				class Item38
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3147.324,84.716537,726.71802};
+						position[]={3147.324,83.780464,726.71802};
 						angles[]={6.2432051,1.6116021,0.019996032};
 					};
 					side="Empty";
@@ -67683,15 +67949,15 @@ class Mission
 					};
 					id=3448;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=-0.016609192;
+					atlOffset=-0.9526825;
 				};
-				class Item43
+				class Item39
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3175.1687,86.237236,713.31494};
-						angles[]={6.153913,4.7564044,0.049953286};
+						position[]={3175.531,85.314972,714.53912};
+						angles[]={6.2574983,4.7515268,0.087357223};
 					};
 					side="Empty";
 					flags=4;
@@ -67701,14 +67967,14 @@ class Mission
 					};
 					id=3449;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.020561218;
+					atlOffset=-1.0341644;
 				};
-				class Item44
+				class Item40
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3169.9592,84.82003,701.83289};
+						position[]={3170.1365,84.574471,701.55127};
 						angles[]={6.2531958,4.7565217,0.07983166};
 					};
 					side="Empty";
@@ -67719,15 +67985,15 @@ class Mission
 					};
 					id=3450;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=-0.071166992;
+					atlOffset=-0.3105545;
 				};
-				class Item45
+				class Item41
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3165.8555,82.617905,605.50592};
-						angles[]={6.2133002,4.7551813,0.089755043};
+						position[]={3165.9915,81.813164,606.06952};
+						angles[]={6.2135797,4.7621737,6.2729115};
 					};
 					side="Empty";
 					flags=4;
@@ -67737,14 +68003,14 @@ class Mission
 					};
 					id=3451;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=0.15252686;
+					atlOffset=-0.73967743;
 				};
-				class Item46
+				class Item42
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3170.9695,83.224403,617.40955};
+						position[]={3171.4167,82.23185,617.66003};
 						angles[]={6.2731848,4.7551813,0.08975438};
 					};
 					side="Empty";
@@ -67755,14 +68021,14 @@ class Mission
 					};
 					id=3452;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.010925293;
+					atlOffset=-1.0243835;
 				};
-				class Item47
+				class Item43
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3142.012,80.677139,606.66052};
+						position[]={3142.356,80.371803,606.92938};
 						angles[]={6.2531877,0.043668833,0.069885373};
 					};
 					side="Empty";
@@ -67773,14 +68039,14 @@ class Mission
 					};
 					id=3453;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=0.017852783;
+					atlOffset=-0.31678009;
 				};
-				class Item48
+				class Item44
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3153.7705,81.409874,601.53601};
+						position[]={3154.0618,81.120071,601.8562};
 						angles[]={6.2531958,0.043552596,0.069885373};
 					};
 					side="Empty";
@@ -67791,15 +68057,15 @@ class Mission
 					};
 					id=3454;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0077285767;
+					atlOffset=-0.31269073;
 				};
-				class Item49
+				class Item45
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3166.8809,83.089172,629.49774};
-						angles[]={6.2631836,3.1819272,0.089761689};
+						position[]={3167.2715,82.065414,629.74634};
+						angles[]={6.2722001,3.1819432,0.089761689};
 					};
 					side="Empty";
 					flags=4;
@@ -67809,14 +68075,14 @@ class Mission
 					};
 					id=3455;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=-0.014915466;
+					atlOffset=-1.0725784;
 				};
-				class Item50
+				class Item46
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3156.7598,82.428589,637.66321};
+						position[]={3157.2141,81.319016,637.90625};
 						angles[]={6.2731905,3.1831489,0.079824187};
 					};
 					side="Empty";
@@ -67827,15 +68093,15 @@ class Mission
 					};
 					id=3456;
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
-					atlOffset=0.022033691;
+					atlOffset=-1.1275406;
 				};
-				class Item51
+				class Item47
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3134.6223,80.026535,617.15833};
-						angles[]={6.1147971,0.041726634,0.12927985};
+						position[]={3135.0994,80.402382,617.29144};
+						angles[]={6.2389822,0.1164209,0.043609798};
 					};
 					side="Empty";
 					flags=4;
@@ -67845,14 +68111,13 @@ class Mission
 					};
 					id=3457;
 					type="3as_prop_fob_modular_wall_corner_inversed_cis";
-					atlOffset=-0.34270477;
 				};
-				class Item52
+				class Item48
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3120.1938,82.682549,620.23944};
+						position[]={3120.356,82.686905,620.44116};
 						angles[]={6.2531977,0.046881638,0.049953286};
 					};
 					side="Empty";
@@ -67863,14 +68128,13 @@ class Mission
 					};
 					id=3458;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.0098114014;
 				};
-				class Item53
+				class Item49
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3154.7917,82.602821,660.18634};
+						position[]={3154.925,81.990974,660.49841};
 						angles[]={6.2332249,4.7551813,0.010000871};
 					};
 					side="Empty";
@@ -67881,15 +68145,15 @@ class Mission
 					};
 					id=3459;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0043411255;
+					atlOffset=-0.62532806;
 				};
-				class Item54
+				class Item50
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3155.1318,82.675941,672.22815};
-						angles[]={6.2531958,4.7551813,0.069885373};
+						position[]={3155.49,82.428474,672.34583};
+						angles[]={6.2532692,4.7569242,0.011843743};
 					};
 					side="Empty";
 					flags=4;
@@ -67899,15 +68163,15 @@ class Mission
 					};
 					id=3460;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.0077362061;
+					atlOffset=-0.26833344;
 				};
-				class Item55
+				class Item51
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3156.2295,83.589455,684.17065};
-						angles[]={6.2332311,4.7551813,6.134294};
+						position[]={3155.9075,82.882492,683.98553};
+						angles[]={6.2337837,4.7472501,0.010497325};
 					};
 					side="Empty";
 					flags=4;
@@ -67917,14 +68181,14 @@ class Mission
 					};
 					id=3461;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.033218384;
+					atlOffset=-0.69348145;
 				};
-				class Item56
+				class Item52
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3171.5879,86.405472,617.30225};
+						position[]={3171.5879,85.365555,617.30225};
 						angles[]={6.2731848,4.7551813,0.08975438};
 					};
 					side="Empty";
@@ -67935,14 +68199,14 @@ class Mission
 					};
 					id=3462;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.023674011;
+					atlOffset=-1.016243;
 				};
-				class Item57
+				class Item53
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3153.4673,84.481941,600.55353};
+						position[]={3153.4673,84.14315,600.55353};
 						angles[]={6.2531958,0.046881638,0.069885373};
 					};
 					side="Empty";
@@ -67953,14 +68217,14 @@ class Mission
 					};
 					id=3463;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.013153076;
+					atlOffset=-0.32563782;
 				};
-				class Item58
+				class Item54
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3170.8923,86.46611,725.61328};
+						position[]={3171.2395,85.353813,725.61639};
 						angles[]={6.2033539,3.1848419,0.13909525};
 					};
 					side="Empty";
@@ -67971,14 +68235,14 @@ class Mission
 					};
 					id=3464;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=-0.047477722;
+					atlOffset=-1.2029419;
 				};
-				class Item59
+				class Item55
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3159.3032,85.831703,730.67828};
+						position[]={3159.4912,84.530884,730.77667};
 						angles[]={6.1934304,3.1848419,0.069885373};
 					};
 					side="Empty";
@@ -67989,15 +68253,15 @@ class Mission
 					};
 					id=3465;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.014266968;
+					atlOffset=-1.3077621;
 				};
-				class Item60
+				class Item56
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3081.7891,76.626663,579.23718};
-						angles[]={6.2631927,0.042110782,0.049953286};
+						position[]={3087.5613,76.734863,576.00946};
+						angles[]={6.2607632,6.2761335,0.048911568};
 					};
 					side="Empty";
 					flags=4;
@@ -68007,15 +68271,14 @@ class Mission
 					};
 					id=3466;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
-					atlOffset=0.020332336;
 				};
-				class Item61
+				class Item57
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3099.3679,80.452843,577.83093};
-						angles[]={6.2631836,0.046881638,0.039980642};
+						position[]={3105.2178,80.773499,575.18939};
+						angles[]={6.2612443,6.2809258,0.038950529};
 					};
 					side="Empty";
 					flags=4;
@@ -68025,15 +68288,15 @@ class Mission
 					};
 					id=3467;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.0056381226;
+					atlOffset=0.11698914;
 				};
-				class Item62
+				class Item58
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3117.4973,78.287697,578.14209};
-						angles[]={6.2432051,0.042110782,0.039980642};
+						position[]={3123.3101,78.608353,576.3902};
+						angles[]={6.241291,6.2761865,0.037970215};
 					};
 					side="Empty";
 					flags=4;
@@ -68043,14 +68306,15 @@ class Mission
 					};
 					id=3468;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
+					atlOffset=0.02281189;
 				};
-				class Item63
+				class Item59
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3069.8821,76.409592,584.66565};
-						angles[]={6.2631893,0.043668833,0.019996032};
+						position[]={3075.552,76.450401,580.49237};
+						angles[]={6.2622318,6.2777414,0.01899031};
 					};
 					side="Empty";
 					flags=4;
@@ -68061,13 +68325,13 @@ class Mission
 					id=3469;
 					type="3as_prop_fob_modular_wall_corner_cis";
 				};
-				class Item64
+				class Item60
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3129.6489,79.11412,582.21899};
-						angles[]={0.02999169,4.7520428,0.059925474};
+						position[]={3135.1929,79.428589,581.0495};
+						angles[]={6.252995,4.7028632,0.058514103};
 					};
 					side="Empty";
 					flags=4;
@@ -68077,15 +68341,15 @@ class Mission
 					};
 					id=3470;
 					type="3as_prop_fob_modular_wall_corner_cis";
-					atlOffset=0.0031204224;
+					atlOffset=-0.072113037;
 				};
-				class Item65
+				class Item61
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3093.5444,77.097519,579.12067};
-						angles[]={6.2531958,0.042110782,0.039979152};
+						position[]={3099.3379,77.418175,576.19165};
+						angles[]={6.2512693,6.2761683,0.038458873};
 					};
 					side="Empty";
 					flags=4;
@@ -68095,14 +68359,15 @@ class Mission
 					};
 					id=3471;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
+					atlOffset=0.12869263;
 				};
-				class Item66
+				class Item62
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3105.5366,77.620773,578.64429};
-						angles[]={6.2731848,0.042110782,0.059933435};
+						position[]={3111.3391,77.941429,576.30463};
+						angles[]={6.2702513,6.2760983,0.059370127};
 					};
 					side="Empty";
 					flags=4;
@@ -68112,14 +68377,15 @@ class Mission
 					};
 					id=3472;
 					type="3as_prop_fob_modular_wall_straight_long_cis";
+					atlOffset=-0.021903992;
 				};
-				class Item67
+				class Item63
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3064.771,79.601898,592.06042};
-						angles[]={6.2531877,1.6169952,0.020001993};
+						position[]={3069.9639,79.62291,587.70325};
+						angles[]={6.2522426,1.5678952,0.018505407};
 					};
 					side="Empty";
 					flags=4;
@@ -68129,15 +68395,14 @@ class Mission
 					};
 					id=3473;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.028793335;
 				};
-				class Item68
+				class Item64
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3135.2393,82.886963,589.23346};
-						angles[]={6.2631927,4.7551813,0.069885373};
+						position[]={3140.4861,83.207619,588.33923};
+						angles[]={6.2592087,4.705698,0.080217108};
 					};
 					side="Empty";
 					flags=4;
@@ -68147,213 +68412,15 @@ class Mission
 					};
 					id=3474;
 					type="3as_prop_fob_modular_wall_watchtower_cis";
-					atlOffset=0.0096817017;
+					atlOffset=-0.019058228;
 				};
-				class Item69
+				class Item65
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3112.4092,81.60788,733.88599};
-						angles[]={6.2332249,4.7551813,0.029987715};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3475;
-					type="land_3as_Bunker_Command";
-					atlOffset=0.0021286011;
-				};
-				class Item70
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3103.0779,81.107521,749.97864};
-						angles[]={6.2232599,4.7551813,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3476;
-					type="3as_End_Trench";
-					atlOffset=-0.041870117;
-				};
-				class Item71
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3123.147,81.693268,749.11493};
-						angles[]={6.233232,1.6135882,0.059925474};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3477;
-					type="3as_End_Trench";
-					atlOffset=0.001625061;
-				};
-				class Item72
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3099.124,80.33239,735.93652};
-						angles[]={6.2332249,3.1843879,0.010000871};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3478;
-					type="3as_T_Trench";
-					atlOffset=-0.00040435791;
-				};
-				class Item73
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3097.2219,80.945435,747.80719};
-						angles[]={6.2133002,4.7551813,0.020001993};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3479;
-					type="3as_T_Trench";
-					atlOffset=-0.019042969;
-				};
-				class Item74
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3125.9209,81.215652,734.88147};
-						angles[]={6.2432065,0.042792328,0.049961641};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3480;
-					type="3as_T_Trench";
-					atlOffset=0.019042969;
-				};
-				class Item75
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3128.8086,81.917168,746.51819};
-						angles[]={6.2332239,4.7551813,0.06988623};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3481;
-					type="3as_T_Trench";
-					atlOffset=-0.0042800903;
-				};
-				class Item76
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3096.52,79.998474,730.29114};
-						angles[]={6.2332249,0.042792328,0.010012784};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3482;
-					type="3as_End_Trench";
-					atlOffset=-0.00023651123;
-				};
-				class Item77
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3128.1208,81.105583,729.02087};
-						angles[]={6.2430859,0.042785875,0.04719241};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3483;
-					type="3as_End_Trench";
-					atlOffset=0.050949097;
-				};
-				class Item78
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3087.4316,82.014374,750.79968};
-						angles[]={6.2232518,4.7551813,0.010000871};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3484;
-					type="land_3as_Bunker";
-					atlOffset=-0.012802124;
-				};
-				class Item79
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3138.5793,83.76696,748.80023};
-						angles[]={6.2232599,4.7551813,0.059925474};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3485;
-					type="land_3as_Bunker";
-					atlOffset=0.0081939697;
-				};
-				class Item80
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3174.2207,82.643852,665.29706};
-						angles[]={6.2731786,0.042705588,0.079832405};
+						position[]={3174.2207,82.639801,665.29706};
+						angles[]={6.2731767,0.042497918,0.10238162};
 					};
 					side="Empty";
 					flags=4;
@@ -68363,14 +68430,13 @@ class Mission
 					};
 					id=3486;
 					type="land_3as_Bunker_Command";
-					atlOffset=0.0040512085;
 				};
-				class Item81
+				class Item66
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3190.3345,82.908379,674.6792};
+						position[]={3190.3345,82.757622,674.6792};
 						angles[]={6.2232599,0.042702798,0.1683882};
 					};
 					side="Empty";
@@ -68381,14 +68447,14 @@ class Mission
 					};
 					id=3487;
 					type="3as_End_Trench";
-					atlOffset=-0.18757629;
+					atlOffset=-0.33833313;
 				};
-				class Item82
+				class Item67
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3189.4685,82.892128,654.60718};
+						position[]={3189.4685,82.43721,654.60718};
 						angles[]={6.2731967,3.1843009,0.099666774};
 					};
 					side="Empty";
@@ -68399,14 +68465,14 @@ class Mission
 					};
 					id=3488;
 					type="3as_End_Trench";
-					atlOffset=0.13660431;
+					atlOffset=-0.3183136;
 				};
-				class Item83
+				class Item68
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3176.3008,81.770653,678.62781};
+						position[]={3176.3008,81.340569,678.62781};
 						angles[]={6.2531958,4.7550969,0.089761689};
 					};
 					side="Empty";
@@ -68417,14 +68483,14 @@ class Mission
 					};
 					id=3489;
 					type="3as_T_Trench";
-					atlOffset=-0.016365051;
+					atlOffset=-0.44644928;
 				};
-				class Item84
+				class Item69
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3188.1758,82.926247,680.53265};
+						position[]={3188.1758,82.624374,680.53265};
 						angles[]={0,0.042705588,0.11943152};
 					};
 					side="Empty";
@@ -68435,14 +68501,14 @@ class Mission
 					};
 					id=3490;
 					type="3as_T_Trench";
-					atlOffset=-0.012527466;
+					atlOffset=-0.31439972;
 				};
-				class Item85
+				class Item70
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3175.2449,81.698975,651.82483};
+						position[]={3175.2449,81.29081,651.82483};
 						angles[]={6.2531958,1.6135011,0.079824187};
 					};
 					side="Empty";
@@ -68453,14 +68519,14 @@ class Mission
 					};
 					id=3491;
 					type="3as_T_Trench";
-					atlOffset=0.052810669;
+					atlOffset=-0.35535431;
 				};
-				class Item86
+				class Item71
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3186.8875,82.603951,648.93884};
+						position[]={3186.8875,82.25621,648.93884};
 						angles[]={6.2731848,0.042705588,0.089761689};
 					};
 					side="Empty";
@@ -68471,14 +68537,14 @@ class Mission
 					};
 					id=3492;
 					type="3as_T_Trench";
-					atlOffset=0.010574341;
+					atlOffset=-0.33716583;
 				};
-				class Item87
+				class Item72
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3170.6621,81.393898,681.24182};
+						position[]={3170.6621,80.994255,681.24182};
 						angles[]={6.233232,1.6135011,0.079824187};
 					};
 					side="Empty";
@@ -68489,14 +68555,14 @@ class Mission
 					};
 					id=3493;
 					type="3as_End_Trench";
-					atlOffset=-0.033912659;
+					atlOffset=-0.4335556;
 				};
-				class Item88
+				class Item73
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3169.3948,81.12471,649.63336};
+						position[]={3169.3948,80.713409,649.63336};
 						angles[]={6.25038,1.6134976,0.079986975};
 					};
 					side="Empty";
@@ -68507,14 +68573,14 @@ class Mission
 					};
 					id=3494;
 					type="3as_End_Trench";
-					atlOffset=0.094017029;
+					atlOffset=-0.31728363;
 				};
-				class Item89
+				class Item74
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3191.1123,84.831078,690.22839};
+						position[]={3191.1123,84.551514,690.22839};
 						angles[]={6.2033539,0.042705588,0.1095605};
 					};
 					side="Empty";
@@ -68525,15 +68591,15 @@ class Mission
 					};
 					id=3495;
 					type="land_3as_Bunker";
-					atlOffset=0.0082778931;
+					atlOffset=-0.27128601;
 				};
-				class Item90
+				class Item75
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3189.1301,83.680626,639.08478};
-						angles[]={6.2631807,0.042705588,0.09967456};
+						position[]={3189.1001,83.384094,639.12128};
+						angles[]={6.2630782,0.041825768,0.14319769};
 					};
 					side="Empty";
 					flags=4;
@@ -68543,15 +68609,15 @@ class Mission
 					};
 					id=3496;
 					type="land_3as_Bunker";
-					atlOffset=0.0059890747;
+					atlOffset=-0.28826904;
 				};
-				class Item91
+				class Item76
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3044.5818,77.938408,670.80847};
-						angles[]={6.2432065,3.1916487,0.010006829};
+						position[]={3044.5818,77.680099,670.80847};
+						angles[]={6.2431612,3.1940475,6.2335024};
 					};
 					side="Empty";
 					flags=4;
@@ -68561,14 +68627,14 @@ class Mission
 					};
 					id=3497;
 					type="land_3as_Bunker_Command";
-					atlOffset=0.0068893433;
+					atlOffset=-0.25141907;
 				};
-				class Item92
+				class Item77
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3028.4885,76.538498,661.59528};
+						position[]={3028.3567,76.237091,661.63464};
 						angles[]={6.2332249,3.1916487,0};
 					};
 					side="Empty";
@@ -68579,14 +68645,14 @@ class Mission
 					};
 					id=3498;
 					type="3as_End_Trench";
-					atlOffset=0.015068054;
+					atlOffset=-0.28961945;
 				};
-				class Item93
+				class Item78
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3029.5132,77.471909,681.66803};
+						position[]={3029.5132,77.17379,681.66803};
 						angles[]={6.233232,0.05006285,6.2631865};
 					};
 					side="Empty";
@@ -68597,14 +68663,14 @@ class Mission
 					};
 					id=3499;
 					type="3as_End_Trench";
-					atlOffset=-0.011322021;
+					atlOffset=-0.30944061;
 				};
-				class Item94
+				class Item79
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3042.5027,76.241013,657.54504};
+						position[]={3042.3782,75.947166,657.64532};
 						angles[]={6.2432065,1.6208594,6.2731786};
 					};
 					side="Empty";
@@ -68615,14 +68681,14 @@ class Mission
 					};
 					id=3500;
 					type="3as_T_Trench";
-					atlOffset=-0.0098800659;
+					atlOffset=-0.30898285;
 				};
-				class Item95
+				class Item80
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3030.6187,76.248123,655.72919};
+						position[]={3030.4851,75.927437,655.87201};
 						angles[]={6.2232533,3.1916487,0};
 					};
 					side="Empty";
@@ -68633,14 +68699,14 @@ class Mission
 					};
 					id=3501;
 					type="3as_T_Trench";
-					atlOffset=0.0099182129;
+					atlOffset=-0.32057953;
 				};
-				class Item96
+				class Item81
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3043.7556,77.461266,684.33942};
+						position[]={3043.7551,77.189407,684.349};
 						angles[]={6.2332249,4.7624521,0};
 					};
 					side="Empty";
@@ -68651,14 +68717,14 @@ class Mission
 					};
 					id=3502;
 					type="3as_T_Trench";
-					atlOffset=-0.0064315796;
+					atlOffset=-0.27867126;
 				};
-				class Item97
+				class Item82
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3032.1401,77.738632,687.31488};
+						position[]={3032.1401,77.397697,687.31488};
 						angles[]={6.2332249,3.1916487,6.2731848};
 					};
 					side="Empty";
@@ -68669,14 +68735,14 @@ class Mission
 					};
 					id=3503;
 					type="3as_T_Trench";
-					atlOffset=-0.0098266602;
+					atlOffset=-0.35076141;
 				};
-				class Item98
+				class Item83
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3049.6335,77.587776,686.49658};
+						position[]={3049.6335,77.319656,686.49658};
 						angles[]={6.2360311,4.7624488,0};
 					};
 					side="Empty";
@@ -68687,14 +68753,14 @@ class Mission
 					};
 					id=3504;
 					type="3as_End_Trench";
-					atlOffset=0.001335144;
+					atlOffset=-0.25372314;
 				};
-				class Item99
+				class Item84
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3027.4922,76.82737,645.9201};
+						position[]={3027.5847,76.527603,646.12286};
 						angles[]={6.233232,3.1916487,0};
 					};
 					side="Empty";
@@ -68705,14 +68771,14 @@ class Mission
 					};
 					id=3505;
 					type="land_3as_Bunker";
-					atlOffset=0.0054550171;
+					atlOffset=-0.29553986;
 				};
-				class Item100
+				class Item85
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3029.8735,79.298264,697.11145};
+						position[]={3029.8735,79.032433,697.11145};
 						angles[]={6.2332249,3.1916487,6.2731905};
 					};
 					side="Empty";
@@ -68723,14 +68789,14 @@ class Mission
 					};
 					id=3506;
 					type="land_3as_Bunker";
-					atlOffset=0.0015029907;
+					atlOffset=-0.264328;
 				};
-				class Item101
+				class Item86
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3048.1416,76.094315,654.95789};
+						position[]={3047.9878,75.793678,655.00787};
 						angles[]={6.2432065,4.7624488,6.2731667};
 					};
 					side="Empty";
@@ -68741,15 +68807,15 @@ class Mission
 					};
 					id=3507;
 					type="3as_End_Trench";
-					atlOffset=-0.012969971;
+					atlOffset=-0.31534576;
 				};
-				class Item102
+				class Item87
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3132.2815,77.436157,569.64465};
-						angles[]={6.2531939,1.6174664,0.059932441};
+						position[]={3125.0718,81.918419,714.61597};
+						angles[]={6.0954213,3.1848419,0.049961641};
 					};
 					side="Empty";
 					flags=4;
@@ -68757,16 +68823,17 @@ class Mission
 					{
 						skill=0.2;
 					};
-					id=3508;
-					type="land_3as_Bunker";
+					id=3589;
+					type="3as_prop_fob_modular_wall_straight_long_cis";
+					atlOffset=-1.0723419;
 				};
-				class Item103
+				class Item88
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3067.6013,74.419853,572.5871};
-						angles[]={6.2731786,1.6174664,0.039979152};
+						position[]={3174.9941,85.11602,706.43927};
+						angles[]={6.2574983,4.7515268,0.087357223};
 					};
 					side="Empty";
 					flags=4;
@@ -68774,16 +68841,17 @@ class Mission
 					{
 						skill=0.2;
 					};
-					id=3509;
-					type="land_3as_Bunker";
+					id=3590;
+					type="3as_prop_fob_modular_wall_straight_long_cis";
+					atlOffset=-0.56505585;
 				};
-				class Item104
+				class Item89
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3141.8394,77.139191,572.1983};
-						angles[]={6.2432051,1.6174664,0.07983166};
+						position[]={3065.5178,78.139351,650.68524};
+						angles[]={6.2722807,3.1099257,6.2830124};
 					};
 					side="Empty";
 					flags=4;
@@ -68791,101 +68859,12 @@ class Mission
 					{
 						skill=0.2;
 					};
-					id=3510;
-					type="3as_T_Trench";
-					atlOffset=-7.6293945e-006;
-				};
-				class Item105
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3058.2266,73.379494,575.82214};
-						angles[]={6.2731848,1.6174664,0.01999305};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3511;
-					type="3as_T_Trench";
-					atlOffset=0.11261749;
-				};
-				class Item106
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3142.0369,77.373596,577.31073};
-						angles[]={6.2496929,3.1882627,0.079572633};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3512;
-					type="3as_End_Trench";
-					atlOffset=0.073143005;
-				};
-				class Item107
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3058.4219,73.807266,580.95325};
-						angles[]={0,3.1882627,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3513;
-					type="3as_End_Trench";
-					atlOffset=0.35623169;
-				};
-				class Item108
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3151.5383,78.809502,569.08875};
-						angles[]={6.2033529,1.6174664,0.06988623};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3514;
-					type="land_3as_Bunker";
-					atlOffset=0.0047912598;
-				};
-				class Item109
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3048.3586,74.128456,573.49194};
-						angles[]={0.09967456,1.6174664,6.1934233};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=3515;
-					type="land_3as_Bunker";
+					id=3591;
+					type="3as_prop_fob_modular_wall_ramp_cis";
 				};
 			};
 			id=3405;
-			atlOffset=0.76043701;
+			atlOffset=0.70453644;
 		};
 		class Item25
 		{
@@ -70188,6 +70167,8 @@ class Mission
 					class Attributes
 					{
 						init="call{this addAction [""<t color='#FFFF00'>Перемещение на Акломатор"",{titleCut [""Перемещение..."",""BLACK IN"",3]; player setposatl [getpos AclomTP select 0, getpos AclomTP select 1, getposatl AclomTP select 2]},"""",1,false,true,"""",""_this distance _target < 5""];" \n "}";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
 						class Inventory
 						{
 							class uniform
@@ -70245,6 +70226,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="ENH_AmbientAnimations";
 							expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -70395,25 +70395,6 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
 						class Attribute2
 						{
 							property="face";
@@ -70433,7 +70414,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_allowSprint";
+							expression="_this allowSprint _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 			};
@@ -70485,6 +70523,8 @@ class Mission
 					class Attributes
 					{
 						name="AclomNPC";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
 						class Inventory
 						{
 							class uniform
@@ -70544,6 +70584,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="ENH_AmbientAnimations";
 							expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
 							class Value
@@ -70693,25 +70752,6 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
 						class Attribute2
 						{
 							property="face";
@@ -70731,7 +70771,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -70740,6 +70818,55 @@ class Mission
 			};
 			id=3587;
 			atlOffset=0.00048828125;
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3106.8267,78.950783,621.7113};
+				angles[]={6.2655759,0.047298327,0.050841689};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3593;
+			type="3as_prop_fob_modular_wall_door_cis";
+		};
+		class Item75
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3117.9678,79.47715,621.34741};
+				angles[]={6.2631927,0,0.059925474};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3594;
+			type="3as_prop_fob_modular_wall_straight_cis";
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3097.4041,78.220123,622.17474};
+				angles[]={6.2631927,0,0.059925474};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3595;
+			type="3as_prop_fob_modular_wall_straight_cis";
+			atlOffset=-0.26340485;
 		};
 	};
 };
