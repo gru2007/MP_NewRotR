@@ -97,7 +97,6 @@ class Extended_PreInit_EventHandlers {
 class CfgSounds {
   sounds[] = {};
   #include "external\tts_beam\cfgSounds.ext"
-  #include "external\dust_storm\cfgSounds.ext"
 };
 
 class CfgDebriefing {
