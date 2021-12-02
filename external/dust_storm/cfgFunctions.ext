@@ -1,0 +1,11 @@
+class dust_storm
+{
+	class storm
+	{
+		file = "external\dust_storm\functions"; //TODO
+		class dust_wall {};
+		class duststorm {};
+		class duststorm_effect {};
+		class hunt {};
+	};
+};
