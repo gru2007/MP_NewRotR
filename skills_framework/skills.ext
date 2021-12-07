@@ -5,6 +5,7 @@
 
 class CfgSkills {
 
+  /*
   class cloak {
     roleRequired = false;
     roles[] = {};
@@ -40,8 +41,9 @@ class CfgSkills {
     rateOn = -1;
     rateOff = 5;
     breakCost = 2000;
-  };
+  };*/
 
+  /*
   class jedi_cloak : cloak {
     flagItems[] = {"SLSW_Jedi_Shadow_Crystal"};
 
@@ -79,9 +81,9 @@ class CfgSkills {
 
     timerCD = 600;
     timerUpTime = 60;
-  };
+  };*/
 
-  class ghillie {
+  /*class ghillie {
     roleRequired = false;
     roles[] = {};
     condition = "true";
@@ -127,8 +129,8 @@ class CfgSkills {
 
     timerCD = 180;
     timerUpTime = 60;
-  };
-  class impulse {
+  };*/
+  /*class impulse {
     roleRequired = false;
     roles[] = {};
     condition = "true";
@@ -143,12 +145,12 @@ class CfgSkills {
       arguments = "[]";
     };
 
-  };
+  };*/
   class bacta {
     roleRequired = false;
     roles[] = {};
     condition = "true";
-    flagItems[] = {"ACE_personalAidKit"};
+    flagItems[] = {"JLTS_drugs_bacta"};
     init = "[_thisConfig, _thisFlag] spawn ZONT_fnc_skill_bacta_init";
     onRespawn = "_thisConfig call ZONT_fnc_removeAllVars";
 
@@ -163,7 +165,7 @@ class CfgSkills {
     maxUses = 3;
     cd = 30 * 60;
   };
-  class bacta99 : bacta {
+  /*class bacta99 : bacta {
     flagItems[] = {"Corp99_BactaCell"};
 
     class action1 : action1 {
@@ -172,7 +174,8 @@ class CfgSkills {
 
     maxUses = 3;
     cd = 5 * 60;
-  };
+  };*/
+  /*
   class injector {
     roleRequired = false;
     roles[] = {};
@@ -194,13 +197,13 @@ class CfgSkills {
     cd = 10 * 60;
     time = 45;
     eps = 10; // energy per second
-  };
+  };*/
 
   class medcore {
     roleRequired = false;
     roles[] = {};
     condition = "true";
-    flagItems[] = {"Corp99_MedCoreTerminal"};
+    flagItems[] = {"ToolKit"};
     init = "";
     onRespawn = "";
 
@@ -212,7 +215,7 @@ class CfgSkills {
       arguments = "[]";
     };
   };
-
+/*
   class warden {
     roleRequired = false;
     roles[] = {};
@@ -257,7 +260,7 @@ class CfgSkills {
     minDist = 10;
     secondDistOffset = 10;
     maxLinks = 5;
-  };
+  };*/
 };
 
 // "Corp99_Visor","Corp99_MedCoreTerminal","Corp99_WardenDETerminal"

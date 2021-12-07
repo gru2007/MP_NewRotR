@@ -10,6 +10,9 @@ waitUntil {vehicle player == player};
 [] execVM "chatCommands.sqf";
 [] execVM "legacy\intro\introtext.sqf";
 
+//Чёт не работают. Ладно, сделаю позже
+//[] execVM "external\zlt_fastrope.sqf";
+
 /******                            Inf Ammo                             ******/
 MagazineWhiteList = [
   "JLTS_DC15A_mag", //DC-15A
@@ -59,16 +62,16 @@ else
 			else 
 			{
 				if ((_nameplayer find "MAJ" !=-1) || (_nameplayer find "GEN" !=-1)) then 
-                {
-                    player setRank "MAJOR"
-                }
-                else 
+        {
+            player setRank "MAJOR"
+        }
+        else 
 				{
-					if ((_nameplayer find "COL" !=-1) || (_nameplayer find "CC" !=-1) || (_nameplayer find "MC" !=-1)) then 
-					{
-						player setRank "COLONEL"
-					}
-				}
+            if ((_nameplayer find "ADM" !=-1) || (_nameplayer find "COL" !=-1) || (_nameplayer find "CC" !=-1) || (_nameplayer find "MC" !=-1)) then 
+            {
+              player setRank "COLONEL"
+            }
+        }
 			}
 		}
 	}
