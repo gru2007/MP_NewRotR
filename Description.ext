@@ -204,6 +204,7 @@ class CfgWLRequisitionPresets
     };
 };
 
+//Фигня для WarLords, честно говоря нз когда юзать будем его
 class CfgWLFactionAssets
 {
 	class WEST // --- BLUFOR
@@ -260,4 +261,10 @@ class CfgDiscordRichPresence {
     defaultSmallImageKey="arma3";					              	// Small image
     defaultSmallImageText="Arma 3";				            		// Small image hover text
     useTimeElapsed=1;								                    	// Show time elapsed since the player connected (1 - true, 0 - false)
+};
+
+/**********                        AutoQuests                        **********/
+class aissp_configs
+{
+	#include "external\LV\config_aissp.hpp"
 };
