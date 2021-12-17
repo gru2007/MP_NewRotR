@@ -142,7 +142,7 @@ while{true}do{ //main loop, which loops "forever", but:
 		_origAmount = _origAmount + ({alive _x} count units LVgroup2);
 	};
 	//*********Add new task:
-	["NewTask", _players, ["Очистите территорию от сил КНС!", "Очистите территорию", "ATTACK"], getPos _newSpot, "ASSIGNED", 0, true, true] call BIS_fnc_setTask;
+	["NewTask", true, ["Очистите территорию от сил КНС!", "Очистите территорию", "ATTACK"], getPos _newSpot, "ASSIGNED", 0, true, true] call BIS_fnc_setTask;
 
 	_chance = floor(random 100);
 	//*********Check task progress:
@@ -218,7 +218,7 @@ while{true}do{ //main loop, which loops "forever", but:
 
 			if (_updateTask) then {
 				["NewTask"] call BIS_fnc_deleteTask;
-				["NewTask", _players, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "ASSIGNED", 0, true, true] call BIS_fnc_setTask;
+				["NewTask", true, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "ASSIGNED", 0, true, true] call BIS_fnc_setTask;
 			};
 
 			_engage = false;
@@ -296,7 +296,7 @@ while{true}do{ //main loop, which loops "forever", but:
 
 			if (_updateTask) then {
 				["NewTask"] call BIS_fnc_deleteTask;
-				["NewTask", _players, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "ASSIGNED", 0, true, true] call BIS_fnc_setTask;
+				["NewTask", true, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "ASSIGNED", 0, true, true] call BIS_fnc_setTask;
 			};
 
 			_engage = false;
@@ -345,7 +345,7 @@ while{true}do{ //main loop, which loops "forever", but:
 
 
 	};
-	["NewTask", _players, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "SUCCEEDED", 0, true, true] call BIS_fnc_setTask;
+	["NewTask", true, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "SUCCEEDED", 0, true, true] call BIS_fnc_setTask;
 	["NewTask"] call BIS_fnc_deleteTask;
 
 	sleep 0.001;
