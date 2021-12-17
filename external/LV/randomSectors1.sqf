@@ -66,7 +66,7 @@ _fihID = 2;					//id (dont change this)
 //******Extra task: chopper - parameters:
 _choExact = false;			//exact
 _choSide = 2;				//side
-_choType = 1;				//chopper type
+_choType = 0;				//chopper type
 _choCaptive = false;		//captive
 _choPatrol = true;			//patrol
 _choDistance = 2200;		//distance
