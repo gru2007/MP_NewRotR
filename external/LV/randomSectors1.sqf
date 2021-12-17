@@ -39,7 +39,8 @@ _updateTask = true;			//show or do not show update task -notification when reinf
 _backupPercentage = 50;		//when hostile units is only this % left, possible reinforcements will engage area
 _engagePercentage = 35;		//when hostile units is only this % left, they will attack player group
 //***Extra task chances: (make sure these equals 100 !)
-_heliChance = 50; 			//chance for hostile chopper backup
+_heliChance = 0; 			//chance for hostile chopper backup
+//Пофикшу позже!
 _infChance = 50; 	//NOT USED
 //******Militarize - parameters:
 _milSide = 2; 				//side
