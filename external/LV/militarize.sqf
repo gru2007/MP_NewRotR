@@ -62,7 +62,7 @@ if(!isNil "_customInit")then{if(_customInit == "nil" || _customInit == "nil0")th
 _grpId = param [11,nil];
 _smokesAndChems = param [12,true];
 _doorHandling = param [13,true];
-_classModuleFilters = param [14,["CIS"]];
+_classModuleFilters = param [14,["ALL"]];
 
 if(_cPos in allMapMarkers)then{
 	_centerPos = getMarkerPos _cPos;

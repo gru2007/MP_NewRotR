@@ -40,12 +40,11 @@ _backupPercentage = 50;		//when hostile units is only this % left, possible rein
 _engagePercentage = 35;		//when hostile units is only this % left, they will attack player group
 //***Extra task chances: (make sure these equals 100 !)
 _heliChance = 0; 			//chance for hostile chopper backup
-//Пофикшу позже!
 _infChance = 50; 	//NOT USED
 //******Militarize - parameters:
 _milSide = 2; 				//side
 _milMen = [true,false];				//spawn men
-_milVehicles = [true,false,false];	//spawn vehicles
+_milVehicles = [false,false,true];	//spawn vehicles
 _milStill = false;			//stay still
 _milMenRatio = [5,6];		//men ratio
 _milVehRatio = [0,4];		//vehicle ratio
@@ -67,7 +66,7 @@ _fihID = 2;					//id (dont change this)
 //******Extra task: chopper - parameters:
 _choExact = false;			//exact
 _choSide = 2;				//side
-_choType = 0;				//chopper type
+_choType = 4;				//chopper type
 _choCaptive = false;		//captive
 _choPatrol = true;			//patrol
 _choDistance = 2200;		//distance
@@ -98,7 +97,7 @@ while{true}do{ //main loop, which loops "forever", but:
 	if(isNil("LVSspots"))exitWith{}; //stops if LVSspots is set to nil
 	_origAmount = 0;
 
-	_players = playableUnits;
+	_players = if (isMultiplayer) then {playableUnits} else {[player]};
 
 	_sleepDelay = 5+(random 2); //random sleep time before new task
 	sleep _sleepDelay; //make it sleep
