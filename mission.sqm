@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=14027;
+		nextID=14038;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1150;
+		nextID=1244;
 	};
 	class Camera
 	{
-		pos[]={7923.3418,6.2417164,6327.4834};
-		dir[]={0.91650587,-0.25888199,0.30496523};
-		up[]={0.24564096,0.96590734,0.081736639};
-		aside[]={0.31572884,3.1235686e-008,-0.948852};
+		pos[]={7096.1694,21.723476,6708.0029};
+		dir[]={-0.49965939,-0.34095925,0.79633325};
+		up[]={-0.18122524,0.94006777,0.28882885};
+		aside[]={0.84708887,5.8155274e-007,0.53150952};
 	};
 };
 binarizationWanted=0;
@@ -55,7 +55,7 @@ addons[]=
 	"OPTRE_UNSC_Structure_Buildings",
 	"JLTS_weapons_crates",
 	"3as_Crystals",
-	"3AS_Prop_FOB",
+	"3as_structures_fob",
 	"SWOP_props_computers",
 	"OPTRE_Buildings_City_Lights",
 	"OPTRE_BW_DoorConsole",
@@ -66,7 +66,6 @@ addons[]=
 	"OPTRE_UNSC_Structure_Highway",
 	"212th_Props_Portable_Generator",
 	"Hoth_ShieldGenerator",
-	"Prop_Objects",
 	"OPTRE_UNSC_Structure_Military",
 	"3as_prop_kamino",
 	"OPTRE_BW_Test",
@@ -153,7 +152,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=98;
+		items=97;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -298,8 +297,8 @@ class AddonsMetaData
 		};
 		class Item23
 		{
-			className="3AS_Prop_FOB";
-			name="3AS_Prop_FOB";
+			className="3as_structures_fob";
+			name="3as_structures_fob";
 			author="Студия 3-й армии";
 		};
 		class Item24
@@ -355,385 +354,379 @@ class AddonsMetaData
 		};
 		class Item34
 		{
-			className="Prop_Objects";
-			name="Prop_Objects";
-			author="3as";
-		};
-		class Item35
-		{
 			className="OPTRE_UNSC_Structure_Military";
 			name="OPTRE_UNSC_Structure_Military";
 		};
-		class Item36
+		class Item35
 		{
 			className="3as_prop_kamino";
 			name="3as_prop_kamino";
 			author="Ranger";
 		};
-		class Item37
+		class Item36
 		{
 			className="SW_medical";
 			name="SW_medical";
 		};
-		class Item38
+		class Item37
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item39
+		class Item38
 		{
 			className="ls_munificent";
 			name="ls_munificent";
 			author="kripto202";
 		};
-		class Item40
+		class Item39
 		{
 			className="OPTRE_UNSC_Structure_CityObjects";
 			name="OPTRE_UNSC_Structure_CityObjects";
 		};
-		class Item41
+		class Item40
 		{
 			className="ls_providence";
 			name="ls_providence";
 			author="kripto202";
 		};
-		class Item42
+		class Item41
 		{
 			className="OPTRE_UNSC_Structure_Signs";
 			name="OPTRE_UNSC_Structure_Signs";
 		};
-		class Item43
+		class Item42
 		{
 			className="3AS_Prop_Interiors";
 			name="3AS_Prop_Interiors";
 			author="Студия 3-й армии";
 		};
-		class Item44
+		class Item43
 		{
 			className="RD501_patch_VenatorMK2";
 			name="RD501_patch_VenatorMK2";
 			author="Spartan163";
 		};
-		class Item45
+		class Item44
 		{
 			className="impammo";
 			name="impammo";
 			author="SWOP";
 		};
-		class Item46
+		class Item45
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item46
 		{
 			className="JLTS_weapons_Core";
 			name="JLTS The Great War - Weapons Core";
 			author="MrClock";
 		};
-		class Item48
+		class Item47
 		{
 			className="JLTS_radios";
 			name="JLTS The Great War - Radios";
 			author="MrClock";
 		};
-		class Item49
+		class Item48
 		{
 			className="ls_armor_bluefor";
 			name="Legion Dissension: Bluefor Armor";
 			author="Legion Studios";
 		};
-		class Item50
+		class Item49
 		{
 			className="3as_JLTS_Uniforms";
 			name="3as_JLTS_Uniforms";
 		};
-		class Item51
+		class Item50
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item51
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item52
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item54
 		{
 			className="3AS_Characters";
 			name="3AS_Characters_Clones_Headgear";
 			author="3rd Army Studios";
 		};
-		class Item56
+		class Item55
 		{
 			className="GONK";
 			name="GONK";
 		};
-		class Item57
+		class Item56
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Market";
 			name="CUP_CAStructures_E_Misc_Misc_Market";
 		};
-		class Item58
+		class Item57
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item59
+		class Item58
 		{
 			className="OPTRE_Vehicles_HEV";
 			name="OPTRE_Vehicles_HEV";
 		};
-		class Item60
+		class Item59
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item61
+		class Item60
 		{
 			className="SLDT_Clone_Helm";
 			name="SLDT_Clone_Helm";
 			author="SLDT";
 		};
-		class Item62
+		class Item61
 		{
 			className="SLDT_Clone_Base";
 			name="SLDT_Clone_Base";
 			author="SLDT";
 		};
-		class Item63
+		class Item62
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item64
+		class Item63
 		{
 			className="OPTRE_Modules";
 			name="OPTRE_Modules";
 			author="Article 2 Studios";
 		};
-		class Item65
+		class Item64
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
 			author="[TF]Nkey";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item66
+		class Item65
 		{
 			className="3as_MTT";
 			name="3as_MTT";
 		};
-		class Item67
+		class Item66
 		{
 			className="ls_hallway";
 			name="ls_hallway";
 			author="kripto202";
 		};
-		class Item68
+		class Item67
 		{
 			className="ls_platforms";
 			name="ls_platforms";
 			author="kripto202";
 		};
-		class Item69
+		class Item68
 		{
 			className="3AS_Prop_Platforms";
 			name="3AS_Prop_Platforms";
 			author="Студия 3-й армии";
 		};
-		class Item70
+		class Item69
 		{
 			className="3AS_Prop_Crates";
 			name="3AS_Prop_Crates";
 			author="Студия 3-й армии";
 		};
-		class Item71
+		class Item70
 		{
 			className="3AS_Prop_Barricades";
 			name="3AS_Prop_Barricades";
 			author="Студия 3-й армии";
 		};
-		class Item72
+		class Item71
 		{
 			className="A3_Structures_F_Exp_Industrial";
 			name="Arma 3 Apex - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item72
 		{
 			className="OPTRE_UNSC_Structure_Containers";
 			name="OPTRE_UNSC_Structure_Containers";
 		};
-		class Item74
+		class Item73
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item75
+		class Item74
 		{
 			className="OPTRE_Buildings_Street_Objects";
 			name="OPTRE_Buildings_Street_Objects";
 		};
-		class Item76
+		class Item75
 		{
 			className="SWOP_NVG";
 			name="SWOP_NVG";
 			author="SWOP";
 		};
-		class Item77
+		class Item76
 		{
 			className="SWLB_clones";
 			name="SWLB_clones";
 			author="SW Legion Studios";
 		};
-		class Item78
+		class Item77
 		{
 			className="LS_units_clones";
 			name="LS_units_clones";
 			author="SW Legion Studios";
 		};
-		class Item79
+		class Item78
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
-		class Item80
+		class Item79
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item81
+		class Item80
 		{
 			className="ls_commandPost";
 			name="ls_commandPost";
 			author="Legion Studios";
 		};
-		class Item82
+		class Item81
 		{
 			className="SWLB_radios";
 			name="SWLB_radios";
 			author="SW Legion Studios";
 		};
-		class Item83
+		class Item82
 		{
 			className="SWOP_Jedi";
 			name="SWOP_Jedi";
 			author="SWOP";
 		};
-		class Item84
+		class Item83
 		{
 			className="A3_Structures_F_Exp_A";
 			name="Arma 3 Nexus Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item85
+		class Item84
 		{
 			className="SWOP_props_other";
 			name="SWOP_props_other";
 			author="SWOP";
 		};
-		class Item86
+		class Item85
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item87
+		class Item86
 		{
 			className="Bandits_characters";
 			name="Bandits_characters";
 			author="SWOP";
 		};
-		class Item88
+		class Item87
 		{
 			className="ElectroBinoculars_SW";
 			name="ElectroBinoculars_SW";
 			author="SWOP";
 		};
-		class Item89
+		class Item88
 		{
 			className="SWOP_RebhelmP";
 			name="SWOP_RebhelmP";
 			author="SWOP";
 		};
-		class Item90
+		class Item89
 		{
 			className="SWOP_GreClothes";
 			name="SWOP_GreClothes";
 			author="SWOP";
 		};
-		class Item91
+		class Item90
 		{
 			className="SWOP_Weapons_Explosives";
 			name="SWOP_Weapons_Explosives";
 			author="SWOP";
 		};
-		class Item92
+		class Item91
 		{
 			className="SWOP_RebSumk_bron";
 			name="SWOP_RebSumk_bron";
 		};
-		class Item93
+		class Item92
 		{
 			className="SWOP_hk47";
 			name="SWOP_hk47";
 			author="SWOP";
 		};
-		class Item94
+		class Item93
 		{
 			className="442_misc_barrel";
 			name="442_misc_barrel";
 			author="KOBRA Mod Team";
 		};
-		class Item95
+		class Item94
 		{
 			className="442_misc_box";
 			name="442_misc_box";
 			author="KOBRA Mod Team";
 		};
-		class Item96
+		class Item95
 		{
 			className="JLTS_core";
 			name="JLTS The Great War - Core";
 			author="MrClock";
 		};
-		class Item97
+		class Item96
 		{
 			className="JLTS_characters_DroidArmor";
 			name="JLTS The Great War - Droids";
@@ -63578,8 +63571,8 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -63588,10 +63581,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="";
+											value=0;
 										};
 									};
 								};
@@ -63616,8 +63609,8 @@ class Mission
 								};
 								class Attribute4
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -63626,10 +63619,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="";
 										};
 									};
 								};
@@ -63898,8 +63891,8 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -63908,10 +63901,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="";
+											value=0;
 										};
 									};
 								};
@@ -63936,8 +63929,8 @@ class Mission
 								};
 								class Attribute4
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -63946,10 +63939,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="";
 										};
 									};
 								};
@@ -64218,8 +64211,8 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -64228,10 +64221,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="";
+											value=0;
 										};
 									};
 								};
@@ -64256,8 +64249,8 @@ class Mission
 								};
 								class Attribute4
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -64266,10 +64259,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="";
 										};
 									};
 								};
@@ -64538,8 +64531,8 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -64548,10 +64541,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="";
+											value=0;
 										};
 									};
 								};
@@ -64595,8 +64588,8 @@ class Mission
 								};
 								class Attribute5
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -64605,10 +64598,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="";
 										};
 									};
 								};
@@ -64882,8 +64875,8 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -64892,10 +64885,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="";
+											value=0;
 										};
 									};
 								};
@@ -64920,8 +64913,8 @@ class Mission
 								};
 								class Attribute4
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -64930,10 +64923,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="";
 										};
 									};
 								};
@@ -65207,8 +65200,8 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="face";
-									expression="_this setface _value;";
+									property="enableStamina";
+									expression="_this enablestamina _value;";
 									class Value
 									{
 										class data
@@ -65217,10 +65210,10 @@ class Mission
 											{
 												type[]=
 												{
-													"STRING"
+													"BOOL"
 												};
 											};
-											value="";
+											value=0;
 										};
 									};
 								};
@@ -65245,8 +65238,8 @@ class Mission
 								};
 								class Attribute4
 								{
-									property="enableStamina";
-									expression="_this enablestamina _value;";
+									property="face";
+									expression="_this setface _value;";
 									class Value
 									{
 										class data
@@ -65255,10 +65248,10 @@ class Mission
 											{
 												type[]=
 												{
-													"BOOL"
+													"STRING"
 												};
 											};
-											value=0;
+											value="";
 										};
 									};
 								};
