@@ -18,13 +18,6 @@ titleText [_text, "PLAIN", 0.2, true, true];
 	"dynamicBlur" ppEffectCommit 5;
 };
 
-//Надо бы в отдельный файл вынести... Но сделаю позже. Сейчас лень)
-player addEventHandler ["Reloaded", { 
-  if (((_this select 3) select 0) in MagazineWhiteList) then { 
-    (_this select 0) addMagazine ((_this select 3) select 0); 
-  }; 
-}];
-
 [player, {
 private _curators = call ZONT_fnc_retrieveCurators;
 if not ((getPlayerUID _this) in _curators) exitWith { };
