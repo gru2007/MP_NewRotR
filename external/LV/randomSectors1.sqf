@@ -46,7 +46,7 @@ _milSide = 2; 				//side
 _milMen = [true,false];				//spawn men
 _milVehicles = [false,false,true];	//spawn vehicles
 _milStill = false;			//stay still
-_milMenRatio = [5,6];		//men ratio
+_milMenRatio = [6,7];		//men ratio
 _milVehRatio = [0,4];		//vehicle ratio
 _milSkills = 0.5;			//skills
 _milGroup = "nil";			//group
@@ -191,7 +191,7 @@ while{true}do{ //main loop, which loops "forever", but:
 		_origAmount = _enemyCount;
 		_chance = floor(random (100));
 	//*********Possible extra task - hostile backup chopper:
-		if(_chance <= _heliChance)then{
+		if(false)then{
 			PLgrp = (group (_players select 0));
 			_choType = selectRandom [1,2,3,4];
 			if(_extraPatrolType == 1)then{ //chase player group
@@ -266,7 +266,7 @@ while{true}do{ //main loop, which loops "forever", but:
 		};
 
 	//*********Possible extra task - hostile infantry group:
-		if(_chance > _heliChance)then{
+		if(false)then{
 			_sPos = [(getPos _newSpot),(_infMaxDis - _infMinDis),_infMinDis,_players] call LV_RandomSpot;
 			_customInit = format ["nul = [%1,%2,%3,%4,%5,nil,nil,false] execVM 'external\LV\LV_functions\LV_fnc_menGroup.sqf';",_sPos,_infSide,_infSize,_infID,_classModuleFilters];
 			nul = [_newSpot,_customInit] spawn LV_vehicleInit;
@@ -345,7 +345,7 @@ while{true}do{ //main loop, which loops "forever", but:
 
 
 	};
-	["NewTask", true, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "SUCCEEDED", 0, true, true] call BIS_fnc_setTask;
+//	["NewTask", true, ["Патруль противника рядом!", "Защитите точку", "DEFEND"], getPos _newSpot, "SUCCEEDED", 0, true, true] call BIS_fnc_setTask;
 	["NewTask"] call BIS_fnc_deleteTask;
 
 	sleep 0.001;

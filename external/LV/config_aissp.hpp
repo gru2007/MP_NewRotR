@@ -122,7 +122,7 @@ class config_aissp
 			cars[] = {"3as_SAC_Trade"};
 			tanks[] = {"3AS_AAT"};
 			helicopters[] = {"3AS_HMP_Gunship"};
-			planes[] = {"3as_Vulture_dynamicLoadout"};
+			planes[] = {};
 			ships[] = {};
 			men[] = {"JLTS_Droid_B1_AT","JLTS_Droid_B1_E5"};
 			men2[] = {};
