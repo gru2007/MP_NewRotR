@@ -10,9 +10,6 @@ waitUntil {vehicle player == player};
 [] execVM "chatCommands.sqf";
 [] execVM "legacy\intro\introtext.sqf";
 
-//Чёт не работают. Ладно, сделаю позже
-//[] execVM "external\zlt_fastrope.sqf";
-
 /******                            Inf Ammo                             ******/
 MagazineWhiteList = [
   "JLTS_DC15A_mag", //DC-15A
@@ -27,7 +24,9 @@ MagazineWhiteList = [
   "3AS_Chaingun_Drum_Mag", //Chaingun
   "3AS_100Rnd_EC40_mag", //DC-17M
   "3AS_5Rnd_EC80_mag", //DC-17M
-  "3AS_AntiArmour_mag" //DC-17M
+  "3AS_AntiArmour_mag", //DC-17M
+  "212th_35Rnd_DC15A_mag", //DC-15A (Mk. 6) 212
+  "212th_35Rnd_DC17_mag" //От 212 мода тож
 ];
 player addEventHandler ["Reloaded", { 
   if (((_this select 3) select 0) in MagazineWhiteList) then { 
