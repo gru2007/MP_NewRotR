@@ -133,3 +133,22 @@ private _fn_getRange = {
   "all",
   []
 ] call CBA_fnc_registerChatCommand;
+
+[
+  "pvp",
+  {
+    params ["_input"];
+
+    systemChat _input;
+    [player, {
+    private _curators = call ZONT_fnc_retrieveCurators;
+    if not ((getPlayerUID _this) in _curators) exitWith { };
+    _this call ZONT_fnc_giveZeus;
+    }] remoteExec ["bis_fnc_call", 2];
+
+    ["#mission MP_NewRotR_PvP.OPTRE_iberius"] remoteExec ["servercommand"];
+
+  },
+  "all",
+  []
+] call CBA_fnc_registerChatCommand;
