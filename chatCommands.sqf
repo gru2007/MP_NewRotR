@@ -143,10 +143,8 @@ private _fn_getRange = {
     [player, {
     private _curators = call ZONT_fnc_retrieveCurators;
     if not ((getPlayerUID _this) in _curators) exitWith { };
-    _this call ZONT_fnc_giveZeus;
+    servercommand "#mission MP_NewRotR_PvP.OPTRE_iberius";
     }] remoteExec ["bis_fnc_call", 2];
-
-    ["#mission MP_NewRotR_PvP.OPTRE_iberius"] remoteExec ["servercommand"];
 
   },
   "all",
