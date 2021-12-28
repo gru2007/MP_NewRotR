@@ -250,7 +250,77 @@ class CfgWLRequisitionPresets
         };
         class EAST // --- доступное для OPFOR
         {
-            // --- место для ввода своих вариантов
+          class Infantry
+            {
+
+            };
+            class Vehicles // Машины 
+            {
+                class 3as_SAC_Trade
+                {
+                    cost = 100;
+                    requirements[]={};
+                };
+                class 3AS_AAT_CIS
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+                class ls_ground_aat_blue
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+                class lsd_car_ast
+                {
+                    cost = 50;
+                    requirements[]={};
+                };
+                class RD501_hailfire_cis
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+            };
+            class Aircraft // Авиация
+            {
+                class 3AS_HMP_Gunship
+                {
+                    cost = 250;
+                    requirements[]={"A"};
+                };
+                class 3as_Vulture_dynamicLoadout
+                {
+                    cost = 250;
+                    requirements[]={"A"};
+                };
+                class RD501_hyena_Mk2
+                {
+                    cost = 300;
+                    requirements[]={"A"};
+                };
+                class 3as_Tri_Fighter_dynamicLoadout
+                {
+                    cost = 200;
+                    requirements[]={"A"};
+                };
+            };
+            class Naval // Флот
+            {
+               
+            };
+            class Gear // Снаряжение (ящики)
+            {
+                
+            };
+            class Defences // Защитные. Например: Станочные орудия
+            {
+                class RD501_field_repeater_cis
+                {
+                    cost = 250;
+                    requirements[]={};
+                };
+            };
         };
     };
 };
@@ -311,7 +381,7 @@ class CfgDiscordRichPresence {
     defaultDetails="May the Force be with You!";	        // Upper text
     defaultState="";			                                // Lower text
     defaultLargeImageKey="pic";					                	// Large image
-    defaultLargeImageText="Revenge of the Republic RP";   // Large image hover text
+    defaultLargeImageText="Revenge of the Republic PvP";   // Large image hover text
     defaultSmallImageKey="arma3";					              	// Small image
     defaultSmallImageText="Arma 3";				            		// Small image hover text
     useTimeElapsed=1;								                    	// Show time elapsed since the player connected (1 - true, 0 - false)

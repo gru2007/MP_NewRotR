@@ -26,7 +26,8 @@ MagazineWhiteList = [
   "3AS_5Rnd_EC80_mag", //DC-17M
   "3AS_AntiArmour_mag", //DC-17M
   "212th_35Rnd_DC15A_mag", //DC-15A (Mk. 6) 212
-  "212th_35Rnd_DC17_mag" //От 212 мода тож
+  "212th_35Rnd_DC17_mag", //От 212 мода тож
+  "JLTS_E5_mag" //E-5 дроидов
 ];
 player addEventHandler ["Reloaded", { 
   if (((_this select 3) select 0) in MagazineWhiteList) then { 
