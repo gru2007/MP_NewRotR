@@ -164,24 +164,75 @@ class CfgWLRequisitionPresets
             {
                 class 3as_RTT
                 {
+                    cost = 100;
+                    requirements[]={};
+                };
+                class 3AS_Barc
+                {
+                    cost = 50;
+                    requirements[]={};
+                };
+                class 3AS_Saber_m1
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+                class 3AS_Saber_m1G
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+                class 3AS_Saber_m1Recon
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+                class 3AS_Saber_AA
+                {
+                    cost = 300;
+                    requirements[]={};
+                };
+                class 3AS_ATTE_Base
+                {
+                    cost = 1000;
+                    requirements[]={};
+                };
+                class RD501_warden_tank_field
+                {
                     cost = 250;
                     requirements[]={};
                 };
             };
             class Aircraft // Авиация
             {
-
+                class 3AS_LAAT_Mk1
+                {
+                    cost = 250;
+                    requirements[]={"A"};
+                };
+                class 3AS_LAAT_Mk1Lights
+                {
+                    cost = 250;
+                    requirements[]={"A"};
+                };
+                class 3AS_LAATC
+                {
+                    cost = 150;
+                    requirements[]={"A"};
+                };
+                class 3AS_V19_Base
+                {
+                    cost = 200;
+                    requirements[]={"A"};
+                };
             };
             class Naval // Флот
             {
+               
             };
             class Gear // Снаряжение (ящики)
             {
-                class Box_212_Ammo
-                {
-                    cost = 10;
-                    requirements[]={};
-                };
+                
             };
             class Defences // Защитные. Например: Станочные орудия
             {
@@ -228,6 +279,8 @@ class CfgWLFactionAssets
 			groups[] = {
 			//	"'Indep' >> 'IND_G_F' >> 'Infantry' >> 'I_G_InfSquad_Assault'", // --- use this part of the config path found in the Config viewer (CfgGroups)
 			//	"'Indep' >> 'IND_C_F' >> 'Infantry' >> 'BanditCombatGroup'" // --- NOTE THE QUOTATION MARKS AND APOSTROPHES
+          "'Indep' >> 'ls_groups_greenfor_mandalorians' >> 'mandalorian_vizslaInfantry' >> 'vizsla_infantry_squad'",
+          "'Indep' >> 'Mandalorians' >> 'SWOP_group_True_Mando_inf' >> 'SWOP_group_True_Mando_inf_team'"
 			};
 		};
 		class MotorizedGroups
@@ -250,6 +303,7 @@ class CfgWLFactionAssets
 		};
 	};
 };
+
 
 //Discord info
 class CfgDiscordRichPresence {
