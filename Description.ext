@@ -284,9 +284,14 @@ class CfgWLRequisitionPresets
             };
             class Aircraft // Авиация
             {
-                class 3AS_HMP_Gunship
+                class ls_cis_hmp
                 {
                     cost = 250;
+                    requirements[]={"A"};
+                };
+		class ls_cis_hmp_transport
+                {
+                    cost = 280;
                     requirements[]={"A"};
                 };
                 class 3as_Vulture_dynamicLoadout
