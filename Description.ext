@@ -266,11 +266,6 @@ class CfgWLRequisitionPresets
                     cost = 300;
                     requirements[]={};
                 };
-                class ls_ground_aat_blue
-                {
-                    cost = 300;
-                    requirements[]={};
-                };
                 class SW_SpeederBike
                 {
                     cost = 50;
@@ -292,16 +287,6 @@ class CfgWLRequisitionPresets
 		class ls_cis_hmp_transport
                 {
                     cost = 280;
-                    requirements[]={"A"};
-                };
-                class 3as_Vulture_dynamicLoadout
-                {
-                    cost = 250;
-                    requirements[]={"A"};
-                };
-                class 3as_Tri_Fighter_dynamicLoadout
-                {
-                    cost = 200;
                     requirements[]={"A"};
                 };
             };
