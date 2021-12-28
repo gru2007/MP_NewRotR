@@ -271,7 +271,7 @@ class CfgWLRequisitionPresets
                     cost = 300;
                     requirements[]={};
                 };
-                class lsd_car_ast
+                class SW_SpeederBike
                 {
                     cost = 50;
                     requirements[]={};
@@ -292,11 +292,6 @@ class CfgWLRequisitionPresets
                 class 3as_Vulture_dynamicLoadout
                 {
                     cost = 250;
-                    requirements[]={"A"};
-                };
-                class RD501_hyena_Mk2
-                {
-                    cost = 300;
                     requirements[]={"A"};
                 };
                 class 3as_Tri_Fighter_dynamicLoadout
